@@ -1,6 +1,6 @@
 import { HomeContainer, TitlePage, ButtonEntrar, ButtonCadastro, ButtonText } from "./style/home"
 
-export default function Login() {
+export default function Home() {
     return (
         <HomeContainer>
             <TitlePage>Pytter Parking</TitlePage>

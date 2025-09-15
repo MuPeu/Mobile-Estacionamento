@@ -5,12 +5,12 @@ export const HomeContainer = styled.View`
     flex: 1;
     align-items: center;
     background-color: #6C6965;
-    gap: 115px;
+    gap: 100px;
 `
 
 export const TitlePage = styled.Text`
   text-align: center;
-  font-size: 75px;
+  font-size: 70px;
   color: white;
 `
 
@@ -24,7 +24,7 @@ export const TitlePage = styled.Text`
 // `
 
 export const ButtonText = styled.Text`
-  font-size: 44px;
+  font-size: 45px;
   color: black;
 `
 
