@@ -1,15 +1,18 @@
-import { HomeContainer, TitlePage, ButtonEntrar, ButtonCadastro, ButtonText } from "./style/home"
+import { HomeContainer, TitlePage, ButtonHistorico, ButtonCadastro, ButtonText, ButtonEntrada, ButtonSaida } from "./style/home"
 
-export default function Home() {
+export default function Login() {
     return (
         <HomeContainer>
             <TitlePage>Pytter Parking</TitlePage>
-            <ButtonEntrar>
-                <ButtonText>Entrar</ButtonText>
-            </ButtonEntrar>
-            <ButtonCadastro>
-                <ButtonText>Cadastro</ButtonText>
-            </ButtonCadastro>
+            <ButtonHistorico>
+                <ButtonText>Histórico</ButtonText>
+            </ButtonHistorico>
+            <ButtonEntrada>
+                <ButtonText>Entrada</ButtonText>
+            </ButtonEntrada>
+            <ButtonSaida>
+                <ButtonText>Saída</ButtonText>
+            </ButtonSaida>
         </HomeContainer>
     )
 }

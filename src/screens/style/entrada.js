@@ -1,14 +1,11 @@
 import styled from "styled-components/native"
 
-export const SingInContainer = styled.View`
+export const EntradaContainer = styled.View`
     padding-top: 47px;
     flex: 1;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    /* background-image: url('./src/assets/BackgroundDefault.png'); */
     background-color: #6C6965;
-    gap: 15px;
+    gap: 100px;
 `
 
 export const TitlePage = styled.Text`
@@ -20,19 +17,10 @@ export const TitlePage = styled.Text`
 export const InputContainer = styled.View`
   flex: 1;
   align-items: center;
-  gap: 100px
+  gap: 75px
 `
 
-// export const Listra = styled.`
-//   color: #FBBD0C;
-//   width: 30px;
-//   height: 120px;
-//   fill: #FBBD0C;
-//   stroke-width: 5px;
-//   stroke: #FBBD0C;
-// `
-
-export const InputLogin = styled.TextInput`
+export const InputEntrada = styled.TextInput`
   font-size: 36px;
   background-color: white;
   width: 365px;
@@ -45,8 +33,8 @@ export const ButtonText = styled.Text`
   color: black;
 `
 
-export const ButtonLogin = styled.TouchableOpacity`
-  width: 235px;
+export const ButtonEnviar = styled.TouchableOpacity`
+  width: 315px;
   height: 83px;
   align-items: center;
   justify-content: center;

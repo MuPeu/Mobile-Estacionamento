@@ -1,10 +1,9 @@
 import styled from "styled-components/native"
 
-export const SingUpContainer = styled.View`
+export const HistoricoContainer = styled.View`
     padding-top: 47px;
     flex: 1;
     align-items: center;
-    /* background-image: url('./assets/Background Default.png'); */
     background-color: #6C6965;
     gap: 100px;
 `
@@ -15,29 +14,18 @@ export const TitlePage = styled.Text`
   color: white;
 `
 
-export const InputContainer = styled.View`
-  flex: 1;
-  align-items: center;
-  gap: 75px
-`
-
-export const InputLogin = styled.TextInput`
-  font-size: 36px;
-  background-color: white;
-  width: 365px;
-  height: 82px;
-  padding-left: 10px;
-`
-
 export const ButtonText = styled.Text`
   font-size: 45px;
   color: black;
 `
 
-export const ButtonCadastrar = styled.TouchableOpacity`
-  width: 315px;
+export const ButtonRegistro = styled.TouchableOpacity`
+  width: 235px;
   height: 83px;
   align-items: center;
   justify-content: center;
+  /* fill: white;
+  stroke-width: 5px;
+  stroke: white; */
   background-color: white;
 `

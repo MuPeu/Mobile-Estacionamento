@@ -1,26 +1,23 @@
 import styled from "styled-components/native"
 
-export const SingInContainer = styled.View`
+export const LoginContainer = styled.View`
     padding-top: 47px;
     flex: 1;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    /* background-image: url('./src/assets/BackgroundDefault.png'); */
     background-color: #6C6965;
-    gap: 15px;
+    gap: 135px;
+`
+
+export const ButtonContainer = styled.View`
+  flex: 1;
+  align-items: center;
+  gap: 100px
 `
 
 export const TitlePage = styled.Text`
   text-align: center;
   font-size: 70px;
   color: white;
-`
-
-export const InputContainer = styled.View`
-  flex: 1;
-  align-items: center;
-  gap: 100px
 `
 
 // export const Listra = styled.`
@@ -32,23 +29,29 @@ export const InputContainer = styled.View`
 //   stroke: #FBBD0C;
 // `
 
-export const InputLogin = styled.TextInput`
-  font-size: 36px;
-  background-color: white;
-  width: 365px;
-  height: 82px;
-  padding-left: 10px;
-`
-
 export const ButtonText = styled.Text`
   font-size: 45px;
   color: black;
 `
 
-export const ButtonLogin = styled.TouchableOpacity`
+export const ButtonEntrar = styled.TouchableOpacity`
   width: 235px;
   height: 83px;
   align-items: center;
   justify-content: center;
+  /* fill: white;
+  stroke-width: 5px;
+  stroke: white; */
+  background-color: white;
+`
+
+export const ButtonCadastro = styled.TouchableOpacity`
+  width: 363px;
+  height: 83px;;
+  align-items: center;
+  justify-content: center;
+  /* fill: white;
+  stroke-width: 5px;
+  stroke: white; */
   background-color: white;
 `

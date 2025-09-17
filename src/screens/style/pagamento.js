@@ -1,6 +1,6 @@
 import styled from "styled-components/native"
 
-export const HomeContainer = styled.View`
+export const PagamentoContainer = styled.View`
     padding-top: 47px;
     flex: 1;
     align-items: center;
@@ -14,22 +14,19 @@ export const TitlePage = styled.Text`
   color: white;
 `
 
-// export const Listra = styled.`
-//   color: #FBBD0C;
-//   width: 30px;
-//   height: 120px;
-//   fill: #FBBD0C;
-//   stroke-width: 5px;
-//   stroke: #FBBD0C;
-// `
+export const ButtonContainer = styled.View`
+  flex: 1;
+  align-items: center;
+  gap: 75px
+`
 
 export const ButtonText = styled.Text`
   font-size: 45px;
   color: black;
 `
 
-export const ButtonHistorico = styled.TouchableOpacity`
-  width: 265px;
+export const ButtonDebito = styled.TouchableOpacity`
+  width: 235px;
   height: 83px;
   align-items: center;
   justify-content: center;
@@ -39,8 +36,8 @@ export const ButtonHistorico = styled.TouchableOpacity`
   background-color: white;
 `
 
-export const ButtonEntrada = styled.TouchableOpacity`
-  width: 257px;
+export const ButtonCredito = styled.TouchableOpacity`
+  width: 363px;
   height: 83px;;
   align-items: center;
   justify-content: center;
@@ -50,9 +47,9 @@ export const ButtonEntrada = styled.TouchableOpacity`
   background-color: white;
 `
 
-export const ButtonSaida = styled.TouchableOpacity`
-  width: 211px;
-  height: 83px;;
+export const ButtonPIX = styled.TouchableOpacity`
+  width: 235px;
+  height: 83px;
   align-items: center;
   justify-content: center;
   /* fill: white;
