@@ -11,6 +11,11 @@ export const SingInContainer = styled.View`
     gap: 15px;
 `
 
+export const BackGround = styled.ImageBackground`
+    width: 100%;
+    height: 100%;
+`
+
 export const TitlePage = styled.Text`
   text-align: center;
   font-size: 70px;
@@ -51,4 +56,13 @@ export const ButtonLogin = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
   background-color: white;
+`
+
+export const CloseContainer = styled.View`
+    padding-left: 25px;
+`
+
+export const ButtonClose = styled.Image`
+    width: 30px;
+    height: 30px;
 `

@@ -8,6 +8,11 @@ export const HomeContainer = styled.View`
     gap: 100px;
 `
 
+export const BackGround = styled.ImageBackground`
+    width: 100%;
+    height: 100%;
+`
+
 export const TitlePage = styled.Text`
   text-align: center;
   font-size: 70px;
@@ -22,6 +27,12 @@ export const TitlePage = styled.Text`
 //   stroke-width: 5px;
 //   stroke: #FBBD0C;
 // `
+
+export const ButtonsContainer = styled.View`
+  flex: 1;
+  align-items: center;
+  gap: 100px
+`
 
 export const ButtonText = styled.Text`
   font-size: 45px;
@@ -59,4 +70,13 @@ export const ButtonSaida = styled.TouchableOpacity`
   stroke-width: 5px;
   stroke: white; */
   background-color: white;
+`
+
+export const CloseContainer = styled.View`
+    padding-left: 300px;
+`
+
+export const ButtonClose = styled.Image`
+    width: 30px;
+    height: 30px;
 `

@@ -8,6 +8,11 @@ export const EntradaContainer = styled.View`
     gap: 100px;
 `
 
+export const BackGround = styled.ImageBackground`
+    width: 100%;
+    height: 100%;
+`
+
 export const TitlePage = styled.Text`
   text-align: center;
   font-size: 70px;

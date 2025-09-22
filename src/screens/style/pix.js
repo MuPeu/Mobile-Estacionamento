@@ -1,12 +1,14 @@
 import styled from "styled-components/native"
 
-export const SingUpContainer = styled.View`
+export const PixContainer = styled.View`
     padding-top: 47px;
     flex: 1;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    /* background-image: url('./assets/Background Default.png'); */
+    /* background-image: url('./src/assets/BackgroundDefault.png'); */
     background-color: #6C6965;
-    gap: 100px;
+    gap: 15px;
 `
 
 export const BackGround = styled.ImageBackground`
@@ -23,10 +25,10 @@ export const TitlePage = styled.Text`
 export const InputContainer = styled.View`
   flex: 1;
   align-items: center;
-  gap: 75px
+  gap: 100px
 `
 
-export const InputLogin = styled.TextInput`
+export const InputPix = styled.TextInput`
   font-size: 36px;
   background-color: white;
   width: 365px;
@@ -34,21 +36,8 @@ export const InputLogin = styled.TextInput`
   padding-left: 10px;
 `
 
-export const ButtonText = styled.Text`
-  font-size: 45px;
-  color: black;
-`
-
-export const ButtonCadastrar = styled.TouchableOpacity`
-  width: 315px;
-  height: 83px;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-`
-
-export const CloseContainer = styled.View`
-    padding-left: 300px;
+export const ButtonContainer = styled.View`
+    padding-left: 340px;
 `
 
 export const ButtonClose = styled.Image`

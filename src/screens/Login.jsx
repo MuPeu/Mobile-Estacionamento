@@ -1,17 +1,19 @@
-import { LoginContainer, TitlePage, ButtonContainer, ButtonEntrar, ButtonCadastro, ButtonText } from "./style/login"
+import { LoginContainer, TitlePage, ButtonsContainer, ButtonEntrar, ButtonCadastro, ButtonText, BackGround } from "./style/login"
 
 export default function Login() {
     return (
         <LoginContainer>
-            <TitlePage>Pytter Parking</TitlePage>
-            <ButtonContainer>
-                <ButtonEntrar>
-                    <ButtonText>Entrar</ButtonText>
-                </ButtonEntrar>
-                <ButtonCadastro>
-                    <ButtonText>Cadastro</ButtonText>
-                </ButtonCadastro>
-            </ButtonContainer>
+            <BackGround source={require('../assets/BackgroundDefault.png')}>
+                <TitlePage>Pytter Parking</TitlePage>
+                <ButtonsContainer>
+                    <ButtonEntrar>
+                        <ButtonText>Entrar</ButtonText>
+                    </ButtonEntrar>
+                    <ButtonCadastro>
+                        <ButtonText>Cadastro</ButtonText>
+                    </ButtonCadastro>
+                </ButtonsContainer>
+            </BackGround>
         </LoginContainer>
     )
 }

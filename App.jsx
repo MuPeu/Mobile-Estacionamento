@@ -8,19 +8,25 @@ import Historico from './src/screens/Historico';
 import Entrada from './src/screens/Entrada';
 import Saida from './src/screens/Saida';
 import Pagamento from './src/screens/Pagamento';
+import Debito from './src/screens/Debito';
+import Credito from './src/screens/Credito';
+import PIX from './src/screens/PIX';
 
 export default function App() {
   return (
     <SafeAreaView style={{flex: 1}}>
       <StatusBar hidden />
       {/* <Login /> */}
-      <SingIn />
+      {/* <SingIn /> */}
       {/* <SingUp /> */}
       {/* <Home /> */}
       {/* <Historico /> */}
       {/* <Entrada /> */}
       {/* <Saida /> */}
       {/* <Pagamento /> */}
+      {/* <Debito /> */}
+      {/* <Credito /> */}
+      <PIX />
     </SafeAreaView>
 
   );

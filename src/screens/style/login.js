@@ -8,7 +8,12 @@ export const LoginContainer = styled.View`
     gap: 135px;
 `
 
-export const ButtonContainer = styled.View`
+export const BackGround = styled.ImageBackground`
+    width: 100%;
+    height: 100%;
+`
+
+export const ButtonsContainer = styled.View`
   flex: 1;
   align-items: center;
   gap: 100px

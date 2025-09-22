@@ -8,6 +8,11 @@ export const HistoricoContainer = styled.View`
     gap: 100px;
 `
 
+export const BackGround = styled.ImageBackground`
+    width: 100%;
+    height: 100%;
+`
+
 export const TitlePage = styled.Text`
   text-align: center;
   font-size: 70px;
@@ -28,4 +33,13 @@ export const ButtonRegistro = styled.TouchableOpacity`
   stroke-width: 5px;
   stroke: white; */
   background-color: white;
+`
+
+export const ButtonContainer = styled.View`
+    padding-left: 300px;
+`
+
+export const ButtonBack = styled.Image`
+    width: 30px;
+    height: 30px;
 `
