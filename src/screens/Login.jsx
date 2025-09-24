@@ -3,7 +3,7 @@ import { LoginContainer, TitlePage, ButtonsContainer, ButtonEntrar, ButtonCadast
 export default function Login() {
     return (
         <LoginContainer>
-            <BackGround source={require('../assets/BackgroundDefault.png')}>
+            <BackGround source={require('../assets/imgs/BackgroundDefault.png')}>
                 <TitlePage>Pytter Parking</TitlePage>
                 <ButtonsContainer>
                     <ButtonEntrar>

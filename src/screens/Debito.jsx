@@ -1,11 +1,11 @@
-import { DebitoContainer, TitlePage, InputContainer, InputDebito, ButtonText, ButtonPagar,ButtonContainer, ButtonClose, BackGround  } from "./style/debito"
+import { DebitoContainer, TitlePage, InputContainer, InputDebito, PagarContainer, ButtonText, ButtonPagar, ButtonContainer, ButtonClose, BackGround  } from "./style/debito"
 
 export default function Debito() {
     return (
         <DebitoContainer>
-            <BackGround source={require('../assets/BackgroundDefault.png')}>
+            <BackGround source={require('../assets/imgs/BackgroundDefault.png')}>
                 <ButtonContainer>
-                    <ButtonClose source={require('../assets/Button-Close.png')}/>
+                    <ButtonClose source={require('../assets/imgs/Button-Close.png')}/>
                 </ButtonContainer>
                 <TitlePage>Débito</TitlePage>
                 <InputContainer>
@@ -14,9 +14,11 @@ export default function Debito() {
                     <InputDebito placeholder="Validade: Mês e Ano"></InputDebito>
                     <InputDebito placeholder="Código de Segurança"></InputDebito>
                 </InputContainer>
-                <ButtonPagar>
-                    <ButtonText>Pagar</ButtonText>
-                </ButtonPagar>
+                <PagarContainer>
+                    <ButtonPagar>
+                        <ButtonText>Pagar</ButtonText>
+                    </ButtonPagar>
+                </PagarContainer>
             </BackGround>
         </DebitoContainer>
     )

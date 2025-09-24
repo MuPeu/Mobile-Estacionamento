@@ -1,7 +1,7 @@
 import styled from "styled-components/native"
 
 export const SingInContainer = styled.View`
-    padding-top: 47px;
+    padding-top: 35px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -25,6 +25,7 @@ export const TitlePage = styled.Text`
 export const InputContainer = styled.View`
   flex: 1;
   align-items: center;
+  padding-top: 175px;
   gap: 100px
 `
 
@@ -45,6 +46,11 @@ export const InputLogin = styled.TextInput`
   padding-left: 10px;
 `
 
+export const LoginContainer = styled.View`
+  padding-bottom: 25px;
+  align-items: center;
+`
+
 export const ButtonText = styled.Text`
   font-size: 45px;
   color: black;
@@ -59,7 +65,7 @@ export const ButtonLogin = styled.TouchableOpacity`
 `
 
 export const CloseContainer = styled.View`
-    padding-left: 25px;
+    padding-left: 350px;
 `
 
 export const ButtonClose = styled.Image`

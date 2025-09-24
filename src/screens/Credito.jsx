@@ -1,11 +1,11 @@
-import { CreditoContainer, TitlePage, InputContainer, InputCredito, ButtonText, ButtonPagar, ButtonContainer, ButtonClose, BackGround  } from "./style/credito"
+import { CreditoContainer, TitlePage, InputContainer, InputCredito, PagarContainer, ButtonText, ButtonPagar, ButtonContainer, ButtonClose, BackGround  } from "./style/credito"
 
 export default function Credito() {
     return (
         <CreditoContainer>
-            <BackGround source={require('../assets/BackgroundDefault.png')}>
+            <BackGround source={require('../assets/imgs/BackgroundDefault.png')}>
                 <ButtonContainer>
-                    <ButtonClose source={require('../assets/Button-Close.png')}/>
+                    <ButtonClose source={require('../assets/imgs/Button-Close.png')}/>
                 </ButtonContainer>
                 <TitlePage>Crédito</TitlePage>
                 <InputContainer>
@@ -14,9 +14,11 @@ export default function Credito() {
                     <InputCredito placeholder="Validade: Mês e Ano"></InputCredito>
                     <InputCredito placeholder="Código de Segurança"></InputCredito>
                 </InputContainer>
-                <ButtonPagar>
-                    <ButtonText>Pagar</ButtonText>
-                </ButtonPagar>
+                <PagarContainer>
+                    <ButtonPagar>
+                        <ButtonText>Pagar</ButtonText>
+                    </ButtonPagar>
+                </PagarContainer>
             </BackGround>
         </CreditoContainer>
     )

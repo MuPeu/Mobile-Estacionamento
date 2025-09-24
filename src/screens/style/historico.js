@@ -1,7 +1,7 @@
 import styled from "styled-components/native"
 
 export const HistoricoContainer = styled.View`
-    padding-top: 47px;
+    padding-top: 35px;
     flex: 1;
     align-items: center;
     background-color: #6C6965;
@@ -24,6 +24,13 @@ export const ButtonText = styled.Text`
   color: black;
 `
 
+export const ButtonsHistorico = styled.View`
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+`
+
 export const ButtonRegistro = styled.TouchableOpacity`
   width: 235px;
   height: 83px;
@@ -36,10 +43,10 @@ export const ButtonRegistro = styled.TouchableOpacity`
 `
 
 export const ButtonContainer = styled.View`
-    padding-left: 300px;
+    padding-left: 25px;
 `
 
 export const ButtonBack = styled.Image`
-    width: 30px;
+    width: 40px;
     height: 30px;
 `

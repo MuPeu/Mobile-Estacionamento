@@ -1,7 +1,7 @@
 import styled from "styled-components/native"
 
 export const LoginContainer = styled.View`
-    padding-top: 47px;
+    padding-top: 35px;
     flex: 1;
     align-items: center;
     background-color: #6C6965;
@@ -16,6 +16,7 @@ export const BackGround = styled.ImageBackground`
 export const ButtonsContainer = styled.View`
   flex: 1;
   align-items: center;
+  padding-top: 125px;
   gap: 100px
 `
 

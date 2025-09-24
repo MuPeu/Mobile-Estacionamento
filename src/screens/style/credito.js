@@ -1,12 +1,11 @@
 import styled from "styled-components/native"
 
 export const CreditoContainer = styled.View`
-    padding-top: 47px;
+    padding-top: 35px;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-image: url('./src/assets/BackgroundDefault.png'); */
     background-color: #6C6965;
     gap: 15px;
 `
@@ -25,7 +24,8 @@ export const TitlePage = styled.Text`
 export const InputContainer = styled.View`
   flex: 1;
   align-items: center;
-  gap: 100px
+  justify-content: center;
+  gap: 75px
 `
 
 export const InputCredito = styled.TextInput`
@@ -34,6 +34,11 @@ export const InputCredito = styled.TextInput`
   width: 365px;
   height: 82px;
   padding-left: 10px;
+`
+
+export const PagarContainer = styled.View`
+  padding-bottom: 25px;
+  align-items: center;
 `
 
 export const ButtonText = styled.Text`

@@ -3,9 +3,9 @@ import { HomeContainer, TitlePage, ButtonHistorico, ButtonsContainer, ButtonText
 export default function Login() {
     return (
         <HomeContainer>
-            <BackGround source={require('../assets/BackgroundDefault.png')}>
+            <BackGround source={require('../assets/imgs/BackgroundDefault.png')}>
                 <CloseContainer>
-                    <ButtonClose source={require('../assets/Button-Close.png')}/>
+                    <ButtonClose source={require('../assets/imgs/Button-Close.png')}/>
                 </CloseContainer>
                 <TitlePage>Pytter Parking</TitlePage>
                 <ButtonsContainer>

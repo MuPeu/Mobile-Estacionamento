@@ -1,7 +1,7 @@
 import styled from "styled-components/native"
 
 export const HomeContainer = styled.View`
-    padding-top: 47px;
+    padding-top: 35px;
     flex: 1;
     align-items: center;
     background-color: #6C6965;
@@ -31,6 +31,7 @@ export const TitlePage = styled.Text`
 export const ButtonsContainer = styled.View`
   flex: 1;
   align-items: center;
+  padding-top: 100px;
   gap: 100px
 `
 
@@ -73,7 +74,7 @@ export const ButtonSaida = styled.TouchableOpacity`
 `
 
 export const CloseContainer = styled.View`
-    padding-left: 300px;
+    padding-left: 350px;
 `
 
 export const ButtonClose = styled.Image`

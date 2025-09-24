@@ -23,10 +23,10 @@ export default function App() {
       {/* <Historico /> */}
       {/* <Entrada /> */}
       {/* <Saida /> */}
-      {/* <Pagamento /> */}
+      <Pagamento />
       {/* <Debito /> */}
       {/* <Credito /> */}
-      <PIX />
+      {/* <PIX /> */}
     </SafeAreaView>
 
   );
