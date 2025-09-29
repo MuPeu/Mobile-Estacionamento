@@ -28,6 +28,12 @@ export const InputContainer = styled.View`
   gap: 75px
 `
 
+export const BackGroundInput = styled.ImageBackground`
+  width: 365px;
+  height: 85px;
+  padding-top: 13px;
+`
+
 export const InputCredito = styled.TextInput`
   font-size: 36px;
   background-color: white;
@@ -44,6 +50,17 @@ export const PagarContainer = styled.View`
 export const ButtonText = styled.Text`
   font-size: 45px;
   color: black;
+`
+
+export const ButtonDefaul = styled.View`
+  align-items: center;
+  justify-content: center;
+`
+
+export const BackGroundPagar = styled.ImageBackground`
+  width: 211px;
+  height: 85px;
+  padding-top: 13px;
 `
 
 export const ButtonPagar = styled.TouchableOpacity`

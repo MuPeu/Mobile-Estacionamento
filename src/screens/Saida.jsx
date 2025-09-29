@@ -1,4 +1,4 @@
-import { SaidaContainer, ButtonContainer, ButtonBack, TitlePage, InputContainer, InputSaida, PagarContainer, ButtonPagar, ButtonText, BackGround } from "./style/saida"
+import { SaidaContainer, ButtonContainer, ButtonBack, TitlePage, InputContainer, InputSaida, BackGroundInput, PagarContainer, ButtonPagar, ButtonDefaul, ButtonText, BackGroundPagar, BackGround } from "./style/saida"
 
 export default function Saida() {
     return (
@@ -9,12 +9,20 @@ export default function Saida() {
                 </ButtonContainer>
                 <TitlePage>Saída</TitlePage>
                 <InputContainer>
-                    <InputSaida placeholder="Placa"></InputSaida>
-                    <InputSaida placeholder="Horario da Saída"></InputSaida>
+                    <InputSaida placeholder="Placa">
+                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
+                    </InputSaida>
+                    <InputSaida placeholder="Horario da Saída">
+                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
+                    </InputSaida>
                 </InputContainer>
                 <PagarContainer>
                     <ButtonPagar>
-                        <ButtonText>Pagar</ButtonText>
+                        <BackGroundPagar source={require('../assets/imgs/Rectangle/Pagar.png')}>
+                            <ButtonDefaul>
+                                <ButtonText>Pagar</ButtonText>
+                            </ButtonDefaul>
+                        </BackGroundPagar>
                     </ButtonPagar>
                 </PagarContainer>
             </BackGround>

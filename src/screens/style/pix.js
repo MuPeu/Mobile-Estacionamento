@@ -11,7 +11,22 @@ export const PixContainer = styled.View`
     gap: 15px;
 `
 
+export const QrContainer = styled.View`
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+`
+
+export const BackGroundQr = styled.View`
+  width: 280px;
+  height: 280px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+`
+
 export const BackGround = styled.ImageBackground`
+    flex: 1;
     width: 100%;
     height: 100%;
 `
@@ -21,19 +36,9 @@ export const TitlePage = styled.Text`
   font-size: 70px;
   color: white;
 `
-
-export const InputContainer = styled.View`
-  flex: 1;
-  align-items: center;
-  gap: 100px
-`
-
-export const InputPix = styled.TextInput`
-  font-size: 36px;
-  background-color: white;
-  width: 365px;
-  height: 82px;
-  padding-left: 10px;
+export const QrImage = styled.Image`
+  width: 275px;
+  height: 275px;
 `
 
 export const ButtonContainer = styled.View`

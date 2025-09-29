@@ -29,14 +29,11 @@ export const InputContainer = styled.View`
   gap: 100px
 `
 
-// export const Listra = styled.`
-//   color: #FBBD0C;
-//   width: 30px;
-//   height: 120px;
-//   fill: #FBBD0C;
-//   stroke-width: 5px;
-//   stroke: #FBBD0C;
-// `
+export const BackGroundInput = styled.ImageBackground`
+  width: 365px;
+  height: 85px;
+  padding-top: 13px;
+`
 
 export const InputLogin = styled.TextInput`
   font-size: 36px;
@@ -54,6 +51,17 @@ export const LoginContainer = styled.View`
 export const ButtonText = styled.Text`
   font-size: 45px;
   color: black;
+`
+
+export const BackGroundLogin = styled.ImageBackground`
+  width: 365px;
+  height: 85px;
+  padding-top: 13px;
+`
+
+export const ButtonDefaul = styled.View`
+  align-items: center;
+  justify-content: center;
 `
 
 export const ButtonLogin = styled.TouchableOpacity`

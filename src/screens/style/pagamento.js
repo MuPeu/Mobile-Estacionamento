@@ -41,7 +41,7 @@ export const ButtonDefaul = styled.View`
 
 export const ButtonDebito = styled.TouchableOpacity`
   width: 236px;
-  height: 83px;
+  height: 85px;
   align-items: center;
   justify-content: center;
   background-color: transparent
@@ -49,29 +49,35 @@ export const ButtonDebito = styled.TouchableOpacity`
 
 export const ButtonCredito = styled.TouchableOpacity`
   width: 364px;
-  height: 83px;
+  height: 85px;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: transparent;
 `
 
 export const ButtonPIX = styled.TouchableOpacity`
   width: 120px;
-  height: 83px;
+  height: 85px;
   align-items: center;
   justify-content: center;
   background-color: transparent;
 `
 
 export const BackGroundDebito = styled.ImageBackground`
-  width: 185px;
-  height: 84px;
+  width: 190px;
+  height: 83px;
+  padding-top: 13px;
+`
+
+export const BackGroundCredito = styled.ImageBackground`
+  width: 210px;
+  height: 83px;
   padding-top: 13px;
 `
 
 export const BackGroundPix = styled.ImageBackground`
-  width: 120px;
-  height: 84px;
+  width: 125px;
+  height: 83px;
   padding-top: 13px;
 `
 

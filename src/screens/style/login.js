@@ -26,18 +26,20 @@ export const TitlePage = styled.Text`
   color: white;
 `
 
-// export const Listra = styled.`
-//   color: #FBBD0C;
-//   width: 30px;
-//   height: 120px;
-//   fill: #FBBD0C;
-//   stroke-width: 5px;
-//   stroke: #FBBD0C;
-// `
-
 export const ButtonText = styled.Text`
   font-size: 45px;
   color: black;
+`
+
+export const ButtonDefaul = styled.View`
+  align-items: center;
+  justify-content: center;
+`
+
+export const BackGroundEntrar = styled.ImageBackground`
+  width: 365px;
+  height: 85px;
+  padding-top: 13px;
 `
 
 export const ButtonEntrar = styled.TouchableOpacity`
@@ -49,6 +51,12 @@ export const ButtonEntrar = styled.TouchableOpacity`
   stroke-width: 5px;
   stroke: white; */
   background-color: white;
+`
+
+export const BackGroundCadastro = styled.ImageBackground`
+  width: 365px;
+  height: 85px;
+  padding-top: 13px;
 `
 
 export const ButtonCadastro = styled.TouchableOpacity`

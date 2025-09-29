@@ -27,6 +27,12 @@ export const InputContainer = styled.View`
   gap: 75px
 `
 
+export const BackGroundInput = styled.ImageBackground`
+  width: 365px;
+  height: 85px;
+  padding-top: 13px;
+`
+
 export const InputLogin = styled.TextInput`
   font-size: 36px;
   background-color: white;
@@ -45,12 +51,23 @@ export const ButtonText = styled.Text`
   color: black;
 `
 
+export const BackGroundCadastar = styled.ImageBackground`
+  width: 365px;
+  height: 85px;
+  padding-top: 13px;
+`
+
 export const ButtonCadastrar = styled.TouchableOpacity`
   width: 315px;
   height: 83px;
   align-items: center;
   justify-content: center;
   background-color: white;
+`
+
+export const ButtonDefaul = styled.View`
+  align-items: center;
+  justify-content: center;
 `
 
 export const CloseContainer = styled.View`

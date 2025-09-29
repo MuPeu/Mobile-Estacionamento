@@ -31,15 +31,23 @@ export const ButtonsHistorico = styled.View`
   gap: 55px;
 `
 
+export const BackGroundPlaca = styled.ImageBackground`
+  width: 365px;
+  height: 85px;
+  padding-top: 13px;
+`
+
+export const ButtonDefaul = styled.View`
+  align-items: center;
+  justify-content: center;
+`
+
 export const ButtonRegistro = styled.TouchableOpacity`
   width: 235px;
   height: 83px;
   align-items: center;
   justify-content: center;
-  /* fill: white;
-  stroke-width: 5px;
-  stroke: white; */
-  background-color: white;
+  background-color: transparent;
 `
 
 export const ButtonContainer = styled.View`

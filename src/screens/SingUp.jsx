@@ -1,4 +1,4 @@
-import { SingUpContainer, TitlePage, InputContainer, InputLogin, CriarContaContainer, ButtonText, ButtonCadastrar, CloseContainer, ButtonClose,  BackGround  } from "./style/singUp"
+import { SingUpContainer, TitlePage, InputContainer, BackGroundInput, InputLogin, CriarContaContainer, ButtonText, BackGroundCadastar, ButtonDefaul, ButtonCadastrar, CloseContainer, ButtonClose,  BackGround  } from "./style/singUp"
 
 export default function SingIn() {
     return (
@@ -9,13 +9,23 @@ export default function SingIn() {
                 </CloseContainer>
                 <TitlePage>Cadastro</TitlePage>
                 <InputContainer>
-                    <InputLogin placeholder="Usuário"></InputLogin>
-                    <InputLogin placeholder="Senha" secureTextEntry={true}></InputLogin>
-                    <InputLogin placeholder="Confirmar Senha" secureTextEntry={true}></InputLogin>
+                    <InputLogin placeholder="Usuário">
+                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
+                    </InputLogin>
+                    <InputLogin placeholder="Senha" secureTextEntry={true}>
+                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
+                    </InputLogin>
+                    <InputLogin placeholder="Confirmar Senha" secureTextEntry={true}>
+                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
+                    </InputLogin>
                 </InputContainer>
                 <CriarContaContainer>
                     <ButtonCadastrar>
-                        <ButtonText>Criar Conta</ButtonText>
+                        <BackGroundCadastar source={require('../assets/imgs/Rectangle/CriarConta.png')}>
+                            <ButtonDefaul>
+                                <ButtonText>Criar Conta</ButtonText>
+                            </ButtonDefaul>
+                        </BackGroundCadastar>
                     </ButtonCadastrar>
                 </CriarContaContainer>
             </BackGround>

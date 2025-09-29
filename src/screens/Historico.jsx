@@ -1,4 +1,4 @@
-import { HistoricoContainer, TitlePage, ButtonsHistorico, ButtonText, ButtonRegistro, ButtonContainer, ButtonBack, BackGround } from "./style/historico"
+import { HistoricoContainer, TitlePage, ButtonsHistorico, ButtonText, BackGroundPlaca, ButtonDefaul, ButtonRegistro, ButtonContainer, ButtonBack, BackGround } from "./style/historico"
 
 export default function Historico() {
     return (
@@ -10,13 +10,25 @@ export default function Historico() {
                 <TitlePage>Histótico</TitlePage>
                 <ButtonsHistorico>
                     <ButtonRegistro>
-                        <ButtonText>IUS-0449</ButtonText>
+                        <BackGroundPlaca source={require('../assets/imgs/Rectangle/Placa.png')}>
+                            <ButtonDefaul>
+                                <ButtonText>IUS-0449</ButtonText>
+                            </ButtonDefaul>
+                        </BackGroundPlaca>
                     </ButtonRegistro>
                     <ButtonRegistro>
-                        <ButtonText>LVY-3529</ButtonText>
+                        <BackGroundPlaca source={require('../assets/imgs/Rectangle/Placa.png')}>
+                            <ButtonDefaul>
+                                <ButtonText>LVY-3529</ButtonText>
+                            </ButtonDefaul>
+                        </BackGroundPlaca>
                     </ButtonRegistro>
                     <ButtonRegistro>
-                        <ButtonText>JGF-3348</ButtonText>
+                        <BackGroundPlaca source={require('../assets/imgs/Rectangle/Placa.png')}>
+                            <ButtonDefaul>
+                                <ButtonText>JGF-3348</ButtonText>
+                            </ButtonDefaul>
+                        </BackGroundPlaca>
                     </ButtonRegistro>
                 </ButtonsHistorico>
             </BackGround>

@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { PagamentoContainer, ButtonContainer, ButtonBack, TitlePage, ButtonsPagamentoContainer, BackGroundDebito, BackGroundPix, ButtonText, ButtonDefaul, ButtonDebito, ButtonCredito, ButtonPIX, BackGround } from "./style/pagamento"
+import { PagamentoContainer, ButtonContainer, ButtonBack, TitlePage, ButtonsPagamentoContainer, BackGroundDebito, BackGroundCredito, BackGroundPix, ButtonText, ButtonDefaul, ButtonDebito, ButtonCredito, ButtonPIX, BackGround } from "./style/pagamento"
 import * as Font from "expo-font"
 
 export default function Pagamento() {
@@ -18,17 +18,21 @@ export default function Pagamento() {
                 <TitlePage>Pagamento</TitlePage>
                 <ButtonsPagamentoContainer>
                     <ButtonDebito>
-                        <BackGroundDebito source={require('../assets/imgs/RectangleDebito.png')}>
+                        <BackGroundDebito source={require('../assets/imgs/Rectangle/Debito.png')}>
                             <ButtonDefaul>
                                 <ButtonText>Débito</ButtonText>
                             </ButtonDefaul>
                         </BackGroundDebito>
                     </ButtonDebito>
                     <ButtonCredito>
-                        <ButtonText>Crédito</ButtonText>
+                        <BackGroundCredito source={require('../assets/imgs/Rectangle/Credito.png')}>
+                            <ButtonDefaul>
+                                <ButtonText>Crédito</ButtonText>
+                            </ButtonDefaul>
+                        </BackGroundCredito>
                     </ButtonCredito>
                     <ButtonPIX>
-                        <BackGroundPix source={require('../assets/imgs/RectanglePix.png')}>
+                        <BackGroundPix source={require('../assets/imgs/Rectangle/Pix.png')}>
                             <ButtonDefaul>
                                 <ButtonText>PIX</ButtonText>
                             </ButtonDefaul>

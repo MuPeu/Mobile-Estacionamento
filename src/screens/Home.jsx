@@ -1,4 +1,4 @@
-import { HomeContainer, TitlePage, ButtonHistorico, ButtonsContainer, ButtonText, ButtonEntrada, ButtonSaida, CloseContainer, ButtonClose, BackGround} from "./style/home"
+import { HomeContainer, TitlePage, BackGroundHistorico, ButtonHistorico, ButtonsContainer, ButtonText, ButtonDefaul, BackGroundEntrada, ButtonEntrada, BackGroundSaida, ButtonSaida, CloseContainer, ButtonClose, BackGround} from "./style/home"
 
 export default function Login() {
     return (
@@ -10,13 +10,25 @@ export default function Login() {
                 <TitlePage>Pytter Parking</TitlePage>
                 <ButtonsContainer>
                     <ButtonHistorico>
-                        <ButtonText>Histórico</ButtonText>
+                        <BackGroundHistorico source={require('../assets/imgs/Rectangle/Historico.png')}>
+                            <ButtonDefaul>
+                                <ButtonText>Histórico</ButtonText>
+                            </ButtonDefaul>
+                        </BackGroundHistorico>
                     </ButtonHistorico>
                     <ButtonEntrada>
-                        <ButtonText>Entrada</ButtonText>
+                        <BackGroundEntrada source={require('../assets/imgs/Rectangle/Entrada.png')}>
+                            <ButtonDefaul>
+                                <ButtonText>Entrada</ButtonText>
+                            </ButtonDefaul>
+                        </BackGroundEntrada>
                     </ButtonEntrada>
                     <ButtonSaida>
-                        <ButtonText>Saída</ButtonText>
+                        <BackGroundSaida source={require('../assets/imgs/Rectangle/Saida.png')}>
+                            <ButtonDefaul>
+                                <ButtonText>Saída</ButtonText>
+                            </ButtonDefaul>
+                        </BackGroundSaida>
                     </ButtonSaida>
                 </ButtonsContainer>
             </BackGround>

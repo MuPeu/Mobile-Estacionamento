@@ -1,4 +1,4 @@
-import { EntradaContainer, ButtonContainer, ButtonBack, TitlePage, InputContainer, InputEntrada, EnviarContainer, ButtonEnviar, ButtonText, BackGround } from "./style/entrada"
+import { EntradaContainer, ButtonContainer, ButtonBack, TitlePage, BackGroundInput, InputContainer, InputEntrada, EnviarContainer, BackGroundEnviar, ButtonDefaul, ButtonEnviar, ButtonText, BackGround } from "./style/entrada"
 
 export default function Entrada() {
     return (
@@ -9,13 +9,23 @@ export default function Entrada() {
                 </ButtonContainer>
                 <TitlePage>Entrada</TitlePage>
                 <InputContainer>
-                    <InputEntrada placeholder="Placa"></InputEntrada>
-                    <InputEntrada placeholder="Modelo"></InputEntrada>
-                    <InputEntrada placeholder="Horario Entrada"></InputEntrada>
+                    <InputEntrada placeholder="Placa">
+                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
+                    </InputEntrada>
+                    <InputEntrada placeholder="Modelo">
+                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
+                    </InputEntrada>
+                    <InputEntrada placeholder="Horario Entrada">
+                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
+                    </InputEntrada>
                 </InputContainer>
                 <EnviarContainer>
                     <ButtonEnviar>
-                        <ButtonText>Enviar</ButtonText>
+                        <BackGroundEnviar source={require('../assets/imgs/Rectangle/Enviar.png')}>
+                            <ButtonDefaul>
+                                <ButtonText>Enviar</ButtonText>
+                            </ButtonDefaul>
+                        </BackGroundEnviar>
                     </ButtonEnviar>
                 </EnviarContainer>
             </BackGround>

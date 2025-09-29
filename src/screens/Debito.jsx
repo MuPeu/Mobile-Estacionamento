@@ -1,4 +1,4 @@
-import { DebitoContainer, TitlePage, InputContainer, InputDebito, PagarContainer, ButtonText, ButtonPagar, ButtonContainer, ButtonClose, BackGround  } from "./style/debito"
+import { DebitoContainer, TitlePage, InputContainer, BackGroundInput, InputDebito, PagarContainer, ButtonText, ButtonDefaul, BackGroundPagar, ButtonPagar, ButtonContainer, ButtonClose, BackGround  } from "./style/debito"
 
 export default function Debito() {
     return (
@@ -9,14 +9,26 @@ export default function Debito() {
                 </ButtonContainer>
                 <TitlePage>Débito</TitlePage>
                 <InputContainer>
-                    <InputDebito placeholder="Número do Cartão"></InputDebito>
-                    <InputDebito placeholder="Títular do Cartão"></InputDebito>
-                    <InputDebito placeholder="Validade: Mês e Ano"></InputDebito>
-                    <InputDebito placeholder="Código de Segurança"></InputDebito>
+                    <InputDebito placeholder="Número do Cartão">
+                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
+                    </InputDebito>
+                    <InputDebito placeholder="Títular do Cartão">
+                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
+                    </InputDebito>
+                    <InputDebito placeholder="Validade: Mês e Ano">
+                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
+                    </InputDebito>
+                    <InputDebito placeholder="Código de Segurança">
+                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
+                    </InputDebito>
                 </InputContainer>
                 <PagarContainer>
                     <ButtonPagar>
-                        <ButtonText>Pagar</ButtonText>
+                        <BackGroundPagar source={require('../assets/imgs/Rectangle/Pagar.png')}>
+                            <ButtonDefaul>
+                                <ButtonText>Pagar</ButtonText>
+                            </ButtonDefaul>
+                        </BackGroundPagar>
                     </ButtonPagar>
                 </PagarContainer>
             </BackGround>
