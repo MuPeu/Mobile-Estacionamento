@@ -9,12 +9,12 @@ export default function SingIn() {
                 </CloseContainer>
                 <TitlePage>Login</TitlePage>
                 <InputContainer>
-                    <InputLogin placeholder="Usuário">
-                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
-                    </InputLogin>
-                    <InputLogin placeholder="Senha">
-                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
-                    </InputLogin>
+                    <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}>
+                        <InputLogin placeholder="Usuário"/>
+                    </BackGroundInput>
+                    <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}>
+                        <InputLogin placeholder="Senha" secureTextEntry={true}/>
+                    </BackGroundInput>
                 </InputContainer>
                 <LoginContainer>
                     <ButtonLogin>

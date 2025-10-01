@@ -9,18 +9,18 @@ export default function Debito() {
                 </ButtonContainer>
                 <TitlePage>Débito</TitlePage>
                 <InputContainer>
-                    <InputDebito placeholder="Número do Cartão">
-                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
-                    </InputDebito>
-                    <InputDebito placeholder="Títular do Cartão">
-                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
-                    </InputDebito>
-                    <InputDebito placeholder="Validade: Mês e Ano">
-                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
-                    </InputDebito>
-                    <InputDebito placeholder="Código de Segurança">
-                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
-                    </InputDebito>
+                    <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}>
+                        <InputDebito placeholder="Número do Cartão"/>
+                    </BackGroundInput>
+                    <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}>
+                        <InputDebito placeholder="Títular do Cartão"/>
+                    </BackGroundInput>
+                    <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}>
+                        <InputDebito placeholder="Validade: Mês e Ano"/>
+                    </BackGroundInput>
+                    <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}>
+                        <InputDebito placeholder="Código de Segurança"/>
+                    </BackGroundInput>
                 </InputContainer>
                 <PagarContainer>
                     <ButtonPagar>

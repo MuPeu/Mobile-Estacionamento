@@ -9,12 +9,12 @@ export default function Saida() {
                 </ButtonContainer>
                 <TitlePage>Saída</TitlePage>
                 <InputContainer>
-                    <InputSaida placeholder="Placa">
-                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
-                    </InputSaida>
-                    <InputSaida placeholder="Horario da Saída">
-                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
-                    </InputSaida>
+                    <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}>
+                        <InputSaida placeholder="Placa"/>
+                    </BackGroundInput>
+                    <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}>
+                        <InputSaida placeholder="Horario Saída"/>
+                    </BackGroundInput>
                 </InputContainer>
                 <PagarContainer>
                     <ButtonPagar>

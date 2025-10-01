@@ -9,15 +9,15 @@ export default function SingIn() {
                 </CloseContainer>
                 <TitlePage>Cadastro</TitlePage>
                 <InputContainer>
-                    <InputLogin placeholder="Usuário">
-                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
-                    </InputLogin>
-                    <InputLogin placeholder="Senha" secureTextEntry={true}>
-                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
-                    </InputLogin>
-                    <InputLogin placeholder="Confirmar Senha" secureTextEntry={true}>
-                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
-                    </InputLogin>
+                    <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}>
+                        <InputLogin placeholder="Usuário"/>
+                    </BackGroundInput>
+                    <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}>
+                        <InputLogin placeholder="Senha" secureTextEntry={true}/>
+                    </BackGroundInput>
+                    <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}>
+                        <InputLogin placeholder="Confirmar Senha" secureTextEntry={true}/>
+                    </BackGroundInput>
                 </InputContainer>
                 <CriarContaContainer>
                     <ButtonCadastrar>

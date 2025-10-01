@@ -9,15 +9,15 @@ export default function Entrada() {
                 </ButtonContainer>
                 <TitlePage>Entrada</TitlePage>
                 <InputContainer>
-                    <InputEntrada placeholder="Placa">
-                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
-                    </InputEntrada>
-                    <InputEntrada placeholder="Modelo">
-                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
-                    </InputEntrada>
-                    <InputEntrada placeholder="Horario Entrada">
-                        <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}></BackGroundInput>
-                    </InputEntrada>
+                    <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}>
+                        <InputEntrada placeholder="Placa"/>
+                    </BackGroundInput>
+                    <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}>
+                        <InputEntrada placeholder="Modelo"/>
+                    </BackGroundInput>
+                    <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}>
+                        <InputEntrada placeholder="Horario Entrada"/>
+                    </BackGroundInput>
                 </InputContainer>
                 <EnviarContainer>
                     <ButtonEnviar>

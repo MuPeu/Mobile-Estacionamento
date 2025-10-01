@@ -3,12 +3,6 @@ import { PagamentoContainer, ButtonContainer, ButtonBack, TitlePage, ButtonsPaga
 import * as Font from "expo-font"
 
 export default function Pagamento() {
-    useEffect(() => {
-        Font.loadAsync({
-            "ALoveOfThunder" : require('../assets/fonts/a-love-of-thunder.ttf')
-        }).then(() => setLoaded(true))
-    },[])
-
     return (
         <PagamentoContainer>
             <BackGround source={require('../assets/imgs/BackgroundDefault.png')}>
