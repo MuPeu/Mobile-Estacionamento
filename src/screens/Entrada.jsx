@@ -1,11 +1,17 @@
-import { EntradaContainer, ButtonContainer, ButtonBack, TitlePage, BackGroundInput, InputContainer, InputEntrada, EnviarContainer, BackGroundEnviar, ButtonDefaul, ButtonEnviar, ButtonText, BackGround } from "./style/entrada"
+import { TouchableOpacity } from "react-native";
+import { EntradaContainer, ButtonContainer, ButtonBack, TitlePage, BackGroundInput, InputContainer, InputEntrada, EnviarContainer, BackGroundEnviar, ButtonEnviar, ButtonText, BackGround } from "./style/entrada"
+import { useNavigation } from '@react-navigation/native';
 
 export default function Entrada() {
+    const navigation = useNavigation()
+
     return (
         <EntradaContainer>
             <BackGround source={require('../assets/imgs/BackgroundDefault.png')}>
                 <ButtonContainer>
-                    <ButtonBack source={require('../assets/imgs/Button-Back.png')}/>
+                    <TouchableOpacity onPress={() => navigation.goBack()}>
+                        <ButtonBack source={require('../assets/imgs/Button-Back.png')}/>
+                    </TouchableOpacity>
                 </ButtonContainer>
                 <TitlePage>Entrada</TitlePage>
                 <InputContainer>
@@ -20,11 +26,9 @@ export default function Entrada() {
                     </BackGroundInput>
                 </InputContainer>
                 <EnviarContainer>
-                    <ButtonEnviar>
+                    <ButtonEnviar onPress={() => navigation.navigate('Home')}>
                         <BackGroundEnviar source={require('../assets/imgs/Rectangle/Enviar.png')}>
-                            <ButtonDefaul>
                                 <ButtonText>Enviar</ButtonText>
-                            </ButtonDefaul>
                         </BackGroundEnviar>
                     </ButtonEnviar>
                 </EnviarContainer>

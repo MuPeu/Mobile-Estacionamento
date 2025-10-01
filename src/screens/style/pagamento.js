@@ -34,11 +34,6 @@ export const ButtonText = styled.Text`
   color: black;
 `
 
-export const ButtonDefaul = styled.View`
-  align-items: center;
-  justify-content: center;
-`
-
 export const ButtonDebito = styled.TouchableOpacity`
   width: 236px;
   height: 85px;
@@ -64,21 +59,24 @@ export const ButtonPIX = styled.TouchableOpacity`
 `
 
 export const BackGroundDebito = styled.ImageBackground`
-  width: 190px;
+  width: 191px;
   height: 83px;
-  padding-top: 13px;
+  align-items: center;
+  justify-content: center;
 `
 
 export const BackGroundCredito = styled.ImageBackground`
-  width: 210px;
+  width: 211px;
   height: 83px;
-  padding-top: 13px;
+  align-items: center;
+  justify-content: center;
 `
 
 export const BackGroundPix = styled.ImageBackground`
-  width: 125px;
+  width: 126px;
   height: 83px;
-  padding-top: 13px;
+  align-items: center;
+  justify-content: center;
 `
 
 export const ButtonContainer = styled.View`

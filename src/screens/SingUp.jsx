@@ -1,11 +1,17 @@
-import { SingUpContainer, TitlePage, InputContainer, BackGroundInput, InputLogin, CriarContaContainer, ButtonText, BackGroundCadastar, ButtonDefaul, ButtonCadastrar, CloseContainer, ButtonClose,  BackGround  } from "./style/singUp"
+import { TouchableOpacity } from "react-native";
+import { SingUpContainer, TitlePage, InputContainer, BackGroundInput, InputLogin, CriarContaContainer, ButtonText, BackGroundCadastar, ButtonCadastrar, CloseContainer, ButtonClose,  BackGround  } from "./style/singUp"
+import { useNavigation } from '@react-navigation/native';
 
 export default function SingIn() {
+    const navigation = useNavigation()
+
     return (
         <SingUpContainer>
             <BackGround source={require('../assets/imgs/BackgroundDefault.png')}>
                 <CloseContainer>
-                    <ButtonClose source={require('../assets/imgs/Button-Close.png')}/>
+                    <TouchableOpacity onPress={() => navigation.goBack()}>
+                        <ButtonClose source={require('../assets/imgs/Button-Close.png')}/>
+                    </TouchableOpacity>
                 </CloseContainer>
                 <TitlePage>Cadastro</TitlePage>
                 <InputContainer>
@@ -20,11 +26,9 @@ export default function SingIn() {
                     </BackGroundInput>
                 </InputContainer>
                 <CriarContaContainer>
-                    <ButtonCadastrar>
+                    <ButtonCadastrar onPress={() => navigation.navigate('Home')}>
                         <BackGroundCadastar source={require('../assets/imgs/Rectangle/CriarConta.png')}>
-                            <ButtonDefaul>
-                                <ButtonText>Criar Conta</ButtonText>
-                            </ButtonDefaul>
+                            <ButtonText>Criar Conta</ButtonText>
                         </BackGroundCadastar>
                     </ButtonCadastrar>
                 </CriarContaContainer>

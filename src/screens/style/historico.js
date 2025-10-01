@@ -1,4 +1,5 @@
 import styled from "styled-components/native"
+import * as Font from "expo-font"
 
 export const HistoricoContainer = styled.View`
     padding-top: 35px;
@@ -16,11 +17,13 @@ export const BackGround = styled.ImageBackground`
 export const TitlePage = styled.Text`
   text-align: center;
   font-size: 70px;
+  font-family: 'ALoveOfThunder';
   color: white;
 `
 
 export const ButtonText = styled.Text`
   font-size: 45px;
+  font-family: 'ALoveOfThunder';
   color: black;
 `
 
@@ -34,10 +37,6 @@ export const ButtonsHistorico = styled.View`
 export const BackGroundPlaca = styled.ImageBackground`
   width: 365px;
   height: 85px;
-  padding-top: 13px;
-`
-
-export const ButtonDefaul = styled.View`
   align-items: center;
   justify-content: center;
 `

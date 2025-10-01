@@ -1,4 +1,5 @@
 import styled from "styled-components/native"
+import * as Font from "expo-font"
 
 export const SingInContainer = styled.View`
     padding-top: 35px;
@@ -6,7 +7,6 @@ export const SingInContainer = styled.View`
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-image: url('./src/assets/BackgroundDefault.png'); */
     background-color: #6C6965;
     gap: 15px;
 `
@@ -19,6 +19,7 @@ export const BackGround = styled.ImageBackground`
 export const TitlePage = styled.Text`
   text-align: center;
   font-size: 70px;
+  font-family: 'ALoveOfThunder';
   color: white;
 `
 
@@ -32,12 +33,11 @@ export const InputContainer = styled.View`
 export const BackGroundInput = styled.ImageBackground`
   width: 365px;
   height: 85px;
-  padding-top: 13px;
 `
 
 export const InputLogin = styled.TextInput`
   font-size: 36px;
-  background-color: white;
+  background-color: transparent;
   width: 365px;
   height: 82px;
   padding-left: 10px;
@@ -50,16 +50,13 @@ export const LoginContainer = styled.View`
 
 export const ButtonText = styled.Text`
   font-size: 45px;
+  font-family: 'ALoveOfThunder';
   color: black;
 `
 
 export const BackGroundLogin = styled.ImageBackground`
   width: 365px;
   height: 85px;
-  padding-top: 13px;
-`
-
-export const ButtonDefaul = styled.View`
   align-items: center;
   justify-content: center;
 `
@@ -69,7 +66,7 @@ export const ButtonLogin = styled.TouchableOpacity`
   height: 83px;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: transparent;
 `
 
 export const CloseContainer = styled.View`

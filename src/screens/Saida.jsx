@@ -1,13 +1,19 @@
-import { SaidaContainer, ButtonContainer, ButtonBack, TitlePage, InputContainer, InputSaida, BackGroundInput, PagarContainer, ButtonPagar, ButtonDefaul, ButtonText, BackGroundPagar, BackGround } from "./style/saida"
+import { TouchableOpacity } from "react-native";
+import { SaidaContainer, ButtonContainer, ButtonBack, TitlePage, InputContainer, InputSaida, BackGroundInput, PagarContainer, ButtonPagar, ButtonText, BackGroundPagar, BackGround } from "./style/saida"
+import { useNavigation } from '@react-navigation/native';
 
 export default function Saida() {
+    const navigation = useNavigation()
+
     return (
         <SaidaContainer>
             <BackGround source={require('../assets/imgs/BackgroundDefault.png')}>
                 <ButtonContainer>
-                    <ButtonBack source={require('../assets/imgs/Button-Back.png')}/>
+                    <TouchableOpacity onPress={() => navigation.goBack()}>
+                        <ButtonBack source={require('../assets/imgs/Button-Back.png')}/>
+                    </TouchableOpacity>
                 </ButtonContainer>
-                <TitlePage>Saída</TitlePage>
+                <TitlePage>Saida</TitlePage>
                 <InputContainer>
                     <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}>
                         <InputSaida placeholder="Placa"/>
@@ -17,11 +23,9 @@ export default function Saida() {
                     </BackGroundInput>
                 </InputContainer>
                 <PagarContainer>
-                    <ButtonPagar>
+                    <ButtonPagar onPress={() => navigation.navigate('Pagamento')}>
                         <BackGroundPagar source={require('../assets/imgs/Rectangle/Pagar.png')}>
-                            <ButtonDefaul>
-                                <ButtonText>Pagar</ButtonText>
-                            </ButtonDefaul>
+                            <ButtonText>Pagar</ButtonText>
                         </BackGroundPagar>
                     </ButtonPagar>
                 </PagarContainer>

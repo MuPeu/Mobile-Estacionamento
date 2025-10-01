@@ -1,11 +1,17 @@
-import { DebitoContainer, TitlePage, InputContainer, BackGroundInput, InputDebito, PagarContainer, ButtonText, ButtonDefaul, BackGroundPagar, ButtonPagar, ButtonContainer, ButtonClose, BackGround  } from "./style/debito"
+import { TouchableOpacity } from "react-native";
+import { DebitoContainer, TitlePage, InputContainer, BackGroundInput, InputDebito, PagarContainer, ButtonText, BackGroundPagar, ButtonPagar, ButtonContainer, ButtonClose, BackGround  } from "./style/debito"
+import { useNavigation } from '@react-navigation/native';
 
 export default function Debito() {
+    const navigation = useNavigation()
+
     return (
         <DebitoContainer>
             <BackGround source={require('../assets/imgs/BackgroundDefault.png')}>
                 <ButtonContainer>
-                    <ButtonClose source={require('../assets/imgs/Button-Close.png')}/>
+                    <TouchableOpacity onPress={() => navigation.goBack()}>
+                        <ButtonClose source={require('../assets/imgs/Button-Close.png')}/>
+                    </TouchableOpacity>
                 </ButtonContainer>
                 <TitlePage>Débito</TitlePage>
                 <InputContainer>
@@ -23,11 +29,9 @@ export default function Debito() {
                     </BackGroundInput>
                 </InputContainer>
                 <PagarContainer>
-                    <ButtonPagar>
+                    <ButtonPagar onPress={() => navigation.navigate('Home')}>
                         <BackGroundPagar source={require('../assets/imgs/Rectangle/Pagar.png')}>
-                            <ButtonDefaul>
-                                <ButtonText>Pagar</ButtonText>
-                            </ButtonDefaul>
+                            <ButtonText>Pagar</ButtonText>
                         </BackGroundPagar>
                     </ButtonPagar>
                 </PagarContainer>

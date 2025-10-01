@@ -1,33 +1,33 @@
-import { HomeContainer, TitlePage, BackGroundHistorico, ButtonHistorico, ButtonsContainer, ButtonText, ButtonDefaul, BackGroundEntrada, ButtonEntrada, BackGroundSaida, ButtonSaida, CloseContainer, ButtonClose, BackGround} from "./style/home"
+import { TouchableOpacity } from "react-native";
+import { HomeContainer, TitlePage, BackGroundHistorico, ButtonHistorico, ButtonsContainer, ButtonText, BackGroundEntrada, ButtonEntrada, BackGroundSaida, ButtonSaida, CloseContainer, ButtonClose, BackGround} from "./style/home"
+import { useNavigation } from '@react-navigation/native';
 
-export default function Login() {
+export default function Home() {
+    const navigation = useNavigation()
+
     return (
         <HomeContainer>
             <BackGround source={require('../assets/imgs/BackgroundDefault.png')}>
                 <CloseContainer>
-                    <ButtonClose source={require('../assets/imgs/Button-Close.png')}/>
+                    <TouchableOpacity onPress={() => navigation.navigate('Login')}>
+                        <ButtonClose source={require('../assets/imgs/Button-Close.png')}/>
+                    </TouchableOpacity>
                 </CloseContainer>
                 <TitlePage>Pytter Parking</TitlePage>
                 <ButtonsContainer>
-                    <ButtonHistorico>
+                    <ButtonHistorico onPress={() => navigation.navigate('Historico')}>
                         <BackGroundHistorico source={require('../assets/imgs/Rectangle/Historico.png')}>
-                            <ButtonDefaul>
-                                <ButtonText>Histórico</ButtonText>
-                            </ButtonDefaul>
+                            <ButtonText>Historico</ButtonText>
                         </BackGroundHistorico>
                     </ButtonHistorico>
-                    <ButtonEntrada>
+                    <ButtonEntrada onPress={() => navigation.navigate('Entrada')}>
                         <BackGroundEntrada source={require('../assets/imgs/Rectangle/Entrada.png')}>
-                            <ButtonDefaul>
-                                <ButtonText>Entrada</ButtonText>
-                            </ButtonDefaul>
+                            <ButtonText>Entrada</ButtonText>
                         </BackGroundEntrada>
                     </ButtonEntrada>
-                    <ButtonSaida>
+                    <ButtonSaida onPress={() => navigation.navigate('Saida')}>
                         <BackGroundSaida source={require('../assets/imgs/Rectangle/Saida.png')}>
-                            <ButtonDefaul>
-                                <ButtonText>Saída</ButtonText>
-                            </ButtonDefaul>
+                            <ButtonText>Saida</ButtonText>
                         </BackGroundSaida>
                     </ButtonSaida>
                 </ButtonsContainer>

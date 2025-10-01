@@ -1,33 +1,33 @@
-import { HistoricoContainer, TitlePage, ButtonsHistorico, ButtonText, BackGroundPlaca, ButtonDefaul, ButtonRegistro, ButtonContainer, ButtonBack, BackGround } from "./style/historico"
+import { TouchableOpacity } from "react-native"
+import { HistoricoContainer, TitlePage, ButtonsHistorico, ButtonText, BackGroundPlaca, ButtonRegistro, ButtonContainer, ButtonBack, BackGround } from "./style/historico"
+import { useNavigation } from '@react-navigation/native';
 
 export default function Historico() {
+    const navigation = useNavigation()
+
     return (
         <HistoricoContainer>
             <BackGround source={require('../assets/imgs/BackgroundDefault.png')}>
                 <ButtonContainer>
-                    <ButtonBack source={require('../assets/imgs/Button-Back.png')}/>
+                    <TouchableOpacity onPress={() => navigation.goBack()}>
+                        <ButtonBack source={require('../assets/imgs/Button-Back.png')}/>
+                    </TouchableOpacity>
                 </ButtonContainer>
-                <TitlePage>Histótico</TitlePage>
+                <TitlePage>Histotico</TitlePage>
                 <ButtonsHistorico>
                     <ButtonRegistro>
                         <BackGroundPlaca source={require('../assets/imgs/Rectangle/Placa.png')}>
-                            <ButtonDefaul>
-                                <ButtonText>IUS-0449</ButtonText>
-                            </ButtonDefaul>
+                            <ButtonText>IUS-0449</ButtonText>
                         </BackGroundPlaca>
                     </ButtonRegistro>
                     <ButtonRegistro>
                         <BackGroundPlaca source={require('../assets/imgs/Rectangle/Placa.png')}>
-                            <ButtonDefaul>
-                                <ButtonText>LVY-3529</ButtonText>
-                            </ButtonDefaul>
+                            <ButtonText>LVY-3529</ButtonText>
                         </BackGroundPlaca>
                     </ButtonRegistro>
                     <ButtonRegistro>
                         <BackGroundPlaca source={require('../assets/imgs/Rectangle/Placa.png')}>
-                            <ButtonDefaul>
-                                <ButtonText>JGF-3348</ButtonText>
-                            </ButtonDefaul>
+                            <ButtonText>JGF-3348</ButtonText>
                         </BackGroundPlaca>
                     </ButtonRegistro>
                 </ButtonsHistorico>

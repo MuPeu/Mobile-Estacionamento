@@ -1,4 +1,5 @@
 import styled from "styled-components/native"
+import * as Font from "expo-font"
 
 export const HomeContainer = styled.View`
     padding-top: 35px;
@@ -16,17 +17,9 @@ export const BackGround = styled.ImageBackground`
 export const TitlePage = styled.Text`
   text-align: center;
   font-size: 70px;
+  font-family: 'ALoveOfThunder';
   color: white;
 `
-
-// export const Listra = styled.`
-//   color: #FBBD0C;
-//   width: 30px;
-//   height: 120px;
-//   fill: #FBBD0C;
-//   stroke-width: 5px;
-//   stroke: #FBBD0C;
-// `
 
 export const ButtonsContainer = styled.View`
   flex: 1;
@@ -37,18 +30,15 @@ export const ButtonsContainer = styled.View`
 
 export const ButtonText = styled.Text`
   font-size: 45px;
+  font-family: 'ALoveOfThunder';
   color: black;
-`
-
-export const ButtonDefaul = styled.View`
-  align-items: center;
-  justify-content: center;
 `
 
 export const BackGroundHistorico = styled.ImageBackground`
   width: 365px;
   height: 85px;
-  padding-top: 13px;
+  align-items: center;
+  justify-content: center;
 `
 
 export const ButtonHistorico = styled.TouchableOpacity`
@@ -56,16 +46,14 @@ export const ButtonHistorico = styled.TouchableOpacity`
   height: 83px;
   align-items: center;
   justify-content: center;
-  /* fill: white;
-  stroke-width: 5px;
-  stroke: white; */
-  background-color: white;
+  background-color: transparent;
 `
 
 export const BackGroundEntrada = styled.ImageBackground`
   width: 365px;
   height: 85px;
-  padding-top: 13px;
+  align-items: center;
+  justify-content: center;
 `
 
 export const ButtonEntrada = styled.TouchableOpacity`
@@ -73,16 +61,14 @@ export const ButtonEntrada = styled.TouchableOpacity`
   height: 83px;;
   align-items: center;
   justify-content: center;
-  /* fill: white;
-  stroke-width: 5px;
-  stroke: white; */
-  background-color: white;
+  background-color: transparent;
 `
 
 export const BackGroundSaida = styled.ImageBackground`
   width: 365px;
   height: 85px;
-  padding-top: 13px;
+  align-items: center;
+  justify-content: center;
 `
 
 export const ButtonSaida = styled.TouchableOpacity`
@@ -90,10 +76,7 @@ export const ButtonSaida = styled.TouchableOpacity`
   height: 83px;;
   align-items: center;
   justify-content: center;
-  /* fill: white;
-  stroke-width: 5px;
-  stroke: white; */
-  background-color: white;
+  background-color: transparent;
 `
 
 export const CloseContainer = styled.View`

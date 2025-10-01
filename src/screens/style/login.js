@@ -1,4 +1,5 @@
 import styled from "styled-components/native"
+import * as Font from "expo-font"
 
 export const LoginContainer = styled.View`
     padding-top: 35px;
@@ -23,23 +24,21 @@ export const ButtonsContainer = styled.View`
 export const TitlePage = styled.Text`
   text-align: center;
   font-size: 70px;
+  font-family: 'ALoveOfThunder';
   color: white;
 `
 
 export const ButtonText = styled.Text`
   font-size: 45px;
+  font-family: 'ALoveOfThunder';
   color: black;
-`
-
-export const ButtonDefaul = styled.View`
-  align-items: center;
-  justify-content: center;
 `
 
 export const BackGroundEntrar = styled.ImageBackground`
   width: 365px;
   height: 85px;
-  padding-top: 13px;
+  align-items: center;
+  justify-content: center;
 `
 
 export const ButtonEntrar = styled.TouchableOpacity`
@@ -47,16 +46,14 @@ export const ButtonEntrar = styled.TouchableOpacity`
   height: 83px;
   align-items: center;
   justify-content: center;
-  /* fill: white;
-  stroke-width: 5px;
-  stroke: white; */
-  background-color: white;
+  background-color: transparent;
 `
 
 export const BackGroundCadastro = styled.ImageBackground`
   width: 365px;
   height: 85px;
-  padding-top: 13px;
+  align-items: center;
+  justify-content: center;
 `
 
 export const ButtonCadastro = styled.TouchableOpacity`
@@ -64,8 +61,5 @@ export const ButtonCadastro = styled.TouchableOpacity`
   height: 83px;;
   align-items: center;
   justify-content: center;
-  /* fill: white;
-  stroke-width: 5px;
-  stroke: white; */
-  background-color: white;
+  background-color: transparent;
 `

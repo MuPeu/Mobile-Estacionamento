@@ -1,35 +1,35 @@
 import { useEffect } from "react"
-import { PagamentoContainer, ButtonContainer, ButtonBack, TitlePage, ButtonsPagamentoContainer, BackGroundDebito, BackGroundCredito, BackGroundPix, ButtonText, ButtonDefaul, ButtonDebito, ButtonCredito, ButtonPIX, BackGround } from "./style/pagamento"
+import { PagamentoContainer, ButtonContainer, ButtonBack, TitlePage, ButtonsPagamentoContainer, BackGroundDebito, BackGroundCredito, BackGroundPix, ButtonText, ButtonDebito, ButtonCredito, ButtonPIX, BackGround } from "./style/pagamento"
 import * as Font from "expo-font"
+import { useNavigation } from '@react-navigation/native';
+import { TouchableOpacity } from "react-native";
 
 export default function Pagamento() {
+    const navigation = useNavigation()
+
     return (
         <PagamentoContainer>
             <BackGround source={require('../assets/imgs/BackgroundDefault.png')}>
                 <ButtonContainer>
-                    <ButtonBack source={require('../assets/imgs/Button-Back.png')}/>
+                    <TouchableOpacity onPress={() => navigation.goBack()}>
+                        <ButtonBack source={require('../assets/imgs/Button-Back.png')}/>
+                    </TouchableOpacity>
                 </ButtonContainer>
                 <TitlePage>Pagamento</TitlePage>
                 <ButtonsPagamentoContainer>
-                    <ButtonDebito>
+                    <ButtonDebito onPress={() => navigation.navigate('Debito')}>
                         <BackGroundDebito source={require('../assets/imgs/Rectangle/Debito.png')}>
-                            <ButtonDefaul>
-                                <ButtonText>Débito</ButtonText>
-                            </ButtonDefaul>
+                            <ButtonText>Débito</ButtonText>
                         </BackGroundDebito>
                     </ButtonDebito>
-                    <ButtonCredito>
+                    <ButtonCredito onPress={() => navigation.navigate('Credito')}>
                         <BackGroundCredito source={require('../assets/imgs/Rectangle/Credito.png')}>
-                            <ButtonDefaul>
-                                <ButtonText>Crédito</ButtonText>
-                            </ButtonDefaul>
+                            <ButtonText>Crédito</ButtonText>
                         </BackGroundCredito>
                     </ButtonCredito>
-                    <ButtonPIX>
+                    <ButtonPIX onPress={() => navigation.navigate('PIX')}>
                         <BackGroundPix source={require('../assets/imgs/Rectangle/Pix.png')}>
-                            <ButtonDefaul>
-                                <ButtonText>PIX</ButtonText>
-                            </ButtonDefaul>
+                            <ButtonText>PIX</ButtonText>
                         </BackGroundPix>
                     </ButtonPIX>
                 </ButtonsPagamentoContainer>

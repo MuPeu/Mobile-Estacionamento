@@ -1,4 +1,5 @@
 import styled from "styled-components/native"
+import * as Font from "expo-font"
 
 export const SaidaContainer = styled.View`
     padding-top: 35px;
@@ -16,6 +17,7 @@ export const BackGround = styled.ImageBackground`
 export const TitlePage = styled.Text`
   text-align: center;
   font-size: 70px;
+  font-family: 'ALoveOfThunder';
   color: white;
 `
 
@@ -37,7 +39,6 @@ export const InputSaida = styled.TextInput`
 export const BackGroundInput = styled.ImageBackground`
   width: 365px;
   height: 85px;
-  padding-top: 13px;
 `
 
 export const PagarContainer = styled.View`
@@ -47,12 +48,8 @@ export const PagarContainer = styled.View`
 
 export const ButtonText = styled.Text`
   font-size: 45px;
+  font-family: 'ALoveOfThunder';
   color: black;
-`
-
-export const ButtonDefaul = styled.View`
-  align-items: center;
-  justify-content: center;
 `
 
 export const ButtonPagar = styled.TouchableOpacity`
@@ -60,13 +57,14 @@ export const ButtonPagar = styled.TouchableOpacity`
   height: 83px;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: transparent;
 `
 
 export const BackGroundPagar = styled.ImageBackground`
   width: 211px;
   height: 85px;
-  padding-top: 13px;
+  align-items: center;
+  justify-content: center;
 `
 
 export const ButtonContainer = styled.View`

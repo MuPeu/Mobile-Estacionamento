@@ -1,4 +1,5 @@
 import styled from "styled-components/native"
+import * as Font from "expo-font"
 
 export const PixContainer = styled.View`
     padding-top: 47px;
@@ -34,6 +35,7 @@ export const BackGround = styled.ImageBackground`
 export const TitlePage = styled.Text`
   text-align: center;
   font-size: 70px;
+  font-family: 'ALoveOfThunder';
   color: white;
 `
 export const QrImage = styled.Image`

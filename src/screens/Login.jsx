@@ -1,23 +1,22 @@
-import { LoginContainer, TitlePage, ButtonsContainer, ButtonDefaul, BackGroundEntrar, ButtonEntrar, BackGroundCadastro, ButtonCadastro, ButtonText, BackGround } from "./style/login"
+import { LoginContainer, TitlePage, ButtonsContainer, BackGroundEntrar, ButtonEntrar, BackGroundCadastro, ButtonCadastro, ButtonText, BackGround } from "./style/login"
+import { useNavigation } from "@react-navigation/native";
 
 export default function Login() {
+    const navigation = useNavigation()
+
     return (
         <LoginContainer>
             <BackGround source={require('../assets/imgs/BackgroundDefault.png')}>
                 <TitlePage>Pytter Parking</TitlePage>
                 <ButtonsContainer>
-                    <ButtonEntrar>
+                    <ButtonEntrar onPress={() => navigation.navigate('SingIn')}>
                         <BackGroundEntrar source={require('../assets/imgs/Rectangle/Entrar.png')}>
-                            <ButtonDefaul>
-                                <ButtonText>Entrar</ButtonText>
-                            </ButtonDefaul>
+                            <ButtonText>Entrar</ButtonText>
                         </BackGroundEntrar>
                     </ButtonEntrar>
-                    <ButtonCadastro>
+                    <ButtonCadastro onPress={() => navigation.navigate('SingUp')}>
                         <BackGroundCadastro source={require('../assets/imgs/Rectangle/Cadastrar-se.png')}>
-                            <ButtonDefaul>
-                                <ButtonText>Cadastro</ButtonText>
-                            </ButtonDefaul>
+                            <ButtonText>Cadastro</ButtonText>
                         </BackGroundCadastro>
                     </ButtonCadastro>
                 </ButtonsContainer>

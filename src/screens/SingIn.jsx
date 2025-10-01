@@ -1,11 +1,17 @@
-import { SingInContainer, TitlePage, InputContainer, BackGroundInput, InputLogin, LoginContainer, ButtonText, ButtonLogin, CloseContainer, BackGroundLogin, ButtonDefaul, ButtonClose, BackGround  } from "./style/singIn"
+import { TouchableOpacity } from "react-native";
+import { SingInContainer, TitlePage, InputContainer, BackGroundInput, InputLogin, LoginContainer, ButtonText, ButtonLogin, CloseContainer, BackGroundLogin, ButtonClose, BackGround  } from "./style/singIn"
+import { useNavigation } from '@react-navigation/native';
 
 export default function SingIn() {
+    const navigation = useNavigation()
+
     return (
         <SingInContainer>
             <BackGround source={require('../assets/imgs/BackgroundDefault.png')}>
                 <CloseContainer>
-                    <ButtonClose source={require('../assets/imgs/Button-Close.png')}/>
+                    <TouchableOpacity onPress={() => navigation.navigate('Login')}>
+                        <ButtonClose source={require('../assets/imgs/Button-Close.png')}/>
+                    </TouchableOpacity>
                 </CloseContainer>
                 <TitlePage>Login</TitlePage>
                 <InputContainer>
@@ -17,11 +23,9 @@ export default function SingIn() {
                     </BackGroundInput>
                 </InputContainer>
                 <LoginContainer>
-                    <ButtonLogin>
+                    <ButtonLogin onPress={() => navigation.navigate('Home')}>
                         <BackGroundLogin source={require('../assets/imgs/Rectangle/Entrar.png')}>
-                            <ButtonDefaul>
-                                <ButtonText>Login</ButtonText>
-                            </ButtonDefaul>
+                            <ButtonText>Login</ButtonText>
                         </BackGroundLogin>
                     </ButtonLogin>
                 </LoginContainer>

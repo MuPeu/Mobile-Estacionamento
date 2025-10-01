@@ -1,10 +1,10 @@
 import styled from "styled-components/native"
+import * as Font from "expo-font"
 
 export const SingUpContainer = styled.View`
     padding-top: 35px;
     flex: 1;
     align-items: center;
-    /* background-image: url('./assets/Background Default.png'); */
     background-color: #6C6965;
     gap: 100px;
 `
@@ -17,6 +17,7 @@ export const BackGround = styled.ImageBackground`
 export const TitlePage = styled.Text`
   text-align: center;
   font-size: 70px;
+  font-family: 'ALoveOfThunder';
   color: white;
 `
 
@@ -30,12 +31,11 @@ export const InputContainer = styled.View`
 export const BackGroundInput = styled.ImageBackground`
   width: 365px;
   height: 85px;
-  padding-top: 13px;
 `
 
 export const InputLogin = styled.TextInput`
   font-size: 36px;
-  background-color: white;
+  background-color: transparent;
   width: 365px;
   height: 82px;
   padding-left: 10px;
@@ -48,13 +48,15 @@ export const CriarContaContainer = styled.View`
 
 export const ButtonText = styled.Text`
   font-size: 45px;
+  font-family: 'ALoveOfThunder';
   color: black;
 `
 
 export const BackGroundCadastar = styled.ImageBackground`
   width: 365px;
   height: 85px;
-  padding-top: 13px;
+  align-items: center;
+  justify-content: center;
 `
 
 export const ButtonCadastrar = styled.TouchableOpacity`
@@ -62,12 +64,7 @@ export const ButtonCadastrar = styled.TouchableOpacity`
   height: 83px;
   align-items: center;
   justify-content: center;
-  background-color: white;
-`
-
-export const ButtonDefaul = styled.View`
-  align-items: center;
-  justify-content: center;
+  background-color: transparent;
 `
 
 export const CloseContainer = styled.View`
