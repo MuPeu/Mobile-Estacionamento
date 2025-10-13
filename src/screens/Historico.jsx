@@ -1,5 +1,5 @@
 import { TouchableOpacity } from "react-native"
-import { HistoricoContainer, TitlePage, ButtonsHistorico, ButtonText, BackGroundPlaca, ButtonRegistro, ButtonContainer, ButtonBack, BackGround } from "./style/historico"
+import { HistoricoContainer, TitlePage, TextNumVagas, ButtonsHistorico, ButtonText, BackGroundPlaca, ButtonRegistro, ButtonContainer, ButtonBack, BackGround } from "./style/historico"
 import { useNavigation } from '@react-navigation/native';
 
 export default function Historico() {
@@ -14,18 +14,19 @@ export default function Historico() {
                     </TouchableOpacity>
                 </ButtonContainer>
                 <TitlePage>Histotico</TitlePage>
+                <TextNumVagas>03 / 50</TextNumVagas>
                 <ButtonsHistorico>
-                    <ButtonRegistro>
+                    <ButtonRegistro onPress={() => navigation.navigate('Saida')}>
                         <BackGroundPlaca source={require('../assets/imgs/Rectangle/Placa.png')}>
                             <ButtonText>IUS-0449</ButtonText>
                         </BackGroundPlaca>
                     </ButtonRegistro>
-                    <ButtonRegistro>
+                    <ButtonRegistro onPress={() => navigation.navigate('Saida')}>
                         <BackGroundPlaca source={require('../assets/imgs/Rectangle/Placa.png')}>
                             <ButtonText>LVY-3529</ButtonText>
                         </BackGroundPlaca>
                     </ButtonRegistro>
-                    <ButtonRegistro>
+                    <ButtonRegistro onPress={() => navigation.navigate('Saida')}>
                         <BackGroundPlaca source={require('../assets/imgs/Rectangle/Placa.png')}>
                             <ButtonText>JGF-3348</ButtonText>
                         </BackGroundPlaca>

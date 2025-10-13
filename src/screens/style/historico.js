@@ -21,6 +21,13 @@ export const TitlePage = styled.Text`
   color: white;
 `
 
+export const TextNumVagas = styled.Text`
+  font-size: 45px;
+  font-family: 'ALoveOfThunder';
+  color: white;
+  text-align: center;
+`
+
 export const ButtonText = styled.Text`
   font-size: 45px;
   font-family: 'ALoveOfThunder';
@@ -57,3 +64,19 @@ export const ButtonBack = styled.Image`
     width: 40px;
     height: 30px;
 `
+
+export default function Placa() {
+  const [cep, setCep] = useState('')
+  const [data, setData] = useState(null)
+
+  function buscarPlaca() {
+
+    return (
+      <ButtonRegistro onPress={() => navigation.navigate('Saida')}>
+        <BackGroundPlaca source={require('../assets/imgs/Rectangle/Placa.png')}>
+          <ButtonText>{data.placa}</ButtonText>
+        </BackGroundPlaca>
+      </ButtonRegistro>
+    )
+  }
+}

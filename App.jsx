@@ -9,13 +9,14 @@ import Pagamento from './src/screens/Pagamento';
 import Debito from './src/screens/Debito';
 import Credito from './src/screens/Credito';
 import PIX from './src/screens/PIX';
+// import Cep from './src/screens/CEP';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, Text, View } from 'react-native';
 import { createStaticNavigation } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const RootStack = createNativeStackNavigator({
-  initialRouteName: 'Login',
+  initialRouteName: 'Home',
   screenOptions: {
     headerShown: false
   },
@@ -30,7 +31,8 @@ const RootStack = createNativeStackNavigator({
     Pagamento: Pagamento,
     Debito: Debito,
     Credito: Credito,
-    PIX: PIX
+    PIX: PIX,
+    // Cep : Cep
   }
 });
 
