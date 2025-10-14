@@ -1,30 +1,41 @@
-import { TouchableOpacity } from "react-native";
+import { TouchableOpacity, Alert } from "react-native";
 import { SaidaContainer, ButtonContainer, ButtonBack, TitlePage, InputContainer, InputSaida, BackGroundInput, PagarContainer, ButtonPagar, ButtonText, BackGroundPagar, BackGround } from "./style/saida"
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useRoute} from '@react-navigation/native';
+import api from "../services/api";
 
 export default function Saida() {
-    const navigation = useNavigation()
+    const navigation = useNavigation();
+    const route = useRoute();
+    const { placa } = route.params || {};
+
+    async function registrarSaida() {
+        try {
+            await api.put(`/saida/${placa}`);
+            Alert.alert("Sucesso", `Saída do veículo ${placa} registrada.`);
+            navigation.navigate("Historico");
+        } catch (error) {
+            console.error(error);
+            Alert.alert("Erro", "Falha ao registrar saída.");
+        }
+    }
 
     return (
         <SaidaContainer>
-            <BackGround source={require('../assets/imgs/BackgroundDefault.png')}>
+            <BackGround source={require("../assets/imgs/BackgroundDefault.png")}>
                 <ButtonContainer>
                     <TouchableOpacity onPress={() => navigation.goBack()}>
-                        <ButtonBack source={require('../assets/imgs/Button-Back.png')}/>
+                        <ButtonBack source={require("../assets/imgs/Button-Back.png")} />
                     </TouchableOpacity>
                 </ButtonContainer>
-                <TitlePage>Saida</TitlePage>
+                <TitlePage>Saída</TitlePage>
                 <InputContainer>
-                    <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}>
-                        <InputSaida placeholder="Placa"/>
-                    </BackGroundInput>
-                    <BackGroundInput source={require('../assets/imgs/Rectangle/Input.png')}>
-                        <InputSaida placeholder="Horario Saída"/>
+                    <BackGroundInput source={require("../assets/imgs/Rectangle/Input.png")}>
+                        <InputSaida value={placa} editable={false} />
                     </BackGroundInput>
                 </InputContainer>
                 <PagarContainer>
-                    <ButtonPagar onPress={() => navigation.navigate('Pagamento')}>
-                        <BackGroundPagar source={require('../assets/imgs/Rectangle/Pagar.png')}>
+                    <ButtonPagar onPress={registrarSaida}>
+                        <BackGroundPagar source={require("../assets/imgs/Rectangle/Pagar.png")}>
                             <ButtonText>Pagar</ButtonText>
                         </BackGroundPagar>
                     </ButtonPagar>
