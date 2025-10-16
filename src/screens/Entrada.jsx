@@ -8,6 +8,7 @@ export default function Entrada() {
     const navigation = useNavigation();
     const [placa, setPlaca] = useState("");
     const [modelo, setModelo] = useState("");
+    const [cor, setCor] = useState("");
 
     async function registrarEntrada() {
         if (!placa || !modelo) {
@@ -24,6 +25,7 @@ export default function Entrada() {
             Alert.alert("Sucesso", "Entrada registrada com sucesso!");
             setPlaca("");
             setModelo("");
+            setCor("");
             navigation.navigate("Home");
         } catch (error) {
             console.error("Erro ao registrar entrada:", error);

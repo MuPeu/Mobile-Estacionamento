@@ -11,7 +11,7 @@ export default function SingIn() {
 
     async function handleLogin() {
         try {
-            const res = await api.post("/api/usuario/signin", {
+            const res = await api.post("/api/usuario/login", {
                 usuario,
                 senha
             });

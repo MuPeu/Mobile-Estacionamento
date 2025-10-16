@@ -11,13 +11,13 @@ export default function SingIn() {
     const [confirmaSenha, setConfirmaSenha] = useState("");
 
     async function handleSingUp() {
-        if(senha !== confirmaSenha) {
+        if (senha !== confirmaSenha) {
             alert("Senhas não coincidem");
             return;
         }
 
         try {
-            await api.post("/api/usuario/signup", {
+            await api.post("/api/usuarios/cadastro", {
                 usuario,
                 senha
             });
