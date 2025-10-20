@@ -7,16 +7,16 @@ export default function PIX() {
     
     return (
         <PixContainer>
-            <BackGround source={require('../assets/imgs/BackgroundDefault.png')}>
+            <BackGround source={require('../assets/imgs/backgroundDefault.png')}>
                 <ButtonContainer>
                     <TouchableOpacity onPress={() => navigation.goBack()}>
-                        <ButtonClose source={require('../assets/imgs/Button-Close.png')}/>
+                        <ButtonClose source={require('../assets/imgs/buttonClose.png')}/>
                     </TouchableOpacity>
                 </ButtonContainer>
                 <TitlePage>PIX</TitlePage>
                 <QrContainer>
                     <BackGroundQr>
-                        <QrImage source={require('../assets/imgs/QrCode.png')}/>
+                        <QrImage source={require('../assets/imgs/qrCode.png')}/>
                     </BackGroundQr>
                 </QrContainer>
             </BackGround>

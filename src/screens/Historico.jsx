@@ -28,10 +28,10 @@ export default function Historico() {
 
     return (
         <HistoricoContainer>
-            <BackGround source={require("../assets/imgs/BackgroundDefault.png")}>
+            <BackGround source={require("../assets/imgs/backgroundDefault.png")}>
                 <ButtonContainer>
                     <TouchableOpacity onPress={() => navigation.goBack()}>
-                        <ButtonBack source={require("../assets/imgs/Button-Back.png")} />
+                        <ButtonBack source={require("../assets/imgs/buttonBack.png")} />
                     </TouchableOpacity>
                 </ButtonContainer>
                 <TitlePage>Histórico</TitlePage>
@@ -46,7 +46,7 @@ export default function Historico() {
                                     key={carro.id_placa}
                                     onPress={() => navigation.navigate("Saida", { placa: carro.id_placa })}
                                 >
-                                    <BackGroundPlaca source={require("../assets/imgs/Rectangle/Placa.png")}>
+                                    <BackGroundPlaca source={require("../assets/imgs/rectangle/placa.png")}>
                                         <ButtonText>{carro.id_placa}</ButtonText>
                                     </BackGroundPlaca>
                                 </ButtonRegistro>

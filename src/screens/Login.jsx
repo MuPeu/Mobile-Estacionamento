@@ -6,16 +6,16 @@ export default function Login() {
 
     return (
         <LoginContainer>
-            <BackGround source={require('../assets/imgs/BackgroundDefault.png')}>
+            <BackGround source={require('../assets/imgs/backgroundDefault.png')}>
                 <TitlePage>Pytter Parking</TitlePage>
                 <ButtonsContainer>
                     <ButtonEntrar onPress={() => navigation.navigate('SingIn')}>
-                        <BackGroundEntrar source={require('../assets/imgs/Rectangle/Entrar.png')}>
+                        <BackGroundEntrar source={require('../assets/imgs/rectangle/entrar.png')}>
                             <ButtonText>Entrar</ButtonText>
                         </BackGroundEntrar>
                     </ButtonEntrar>
                     <ButtonCadastro onPress={() => navigation.navigate('SingUp')}>
-                        <BackGroundCadastro source={require('../assets/imgs/Rectangle/Cadastrar-se.png')}>
+                        <BackGroundCadastro source={require('../assets/imgs/rectangle/cadastrar-se.png')}>
                             <ButtonText>Cadastro</ButtonText>
                         </BackGroundCadastro>
                     </ButtonCadastro>

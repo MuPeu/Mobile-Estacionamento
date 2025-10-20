@@ -9,26 +9,26 @@ export default function Pagamento() {
 
     return (
         <PagamentoContainer>
-            <BackGround source={require('../assets/imgs/BackgroundDefault.png')}>
+            <BackGround source={require('../assets/imgs/backgroundDefault.png')}>
                 <ButtonContainer>
                     <TouchableOpacity onPress={() => navigation.goBack()}>
-                        <ButtonBack source={require('../assets/imgs/Button-Back.png')}/>
+                        <ButtonBack source={require('../assets/imgs/buttonBack.png')}/>
                     </TouchableOpacity>
                 </ButtonContainer>
                 <TitlePage>Pagamento</TitlePage>
                 <ButtonsPagamentoContainer>
                     <ButtonDebito onPress={() => navigation.navigate('Debito')}>
-                        <BackGroundDebito source={require('../assets/imgs/Rectangle/Debito.png')}>
+                        <BackGroundDebito source={require('../assets/imgs/rectangle/debito.png')}>
                             <ButtonText>Débito</ButtonText>
                         </BackGroundDebito>
                     </ButtonDebito>
                     <ButtonCredito onPress={() => navigation.navigate('Credito')}>
-                        <BackGroundCredito source={require('../assets/imgs/Rectangle/Credito.png')}>
+                        <BackGroundCredito source={require('../assets/imgs/rectangle/credito.png')}>
                             <ButtonText>Crédito</ButtonText>
                         </BackGroundCredito>
                     </ButtonCredito>
                     <ButtonPIX onPress={() => navigation.navigate('PIX')}>
-                        <BackGroundPix source={require('../assets/imgs/Rectangle/Pix.png')}>
+                        <BackGroundPix source={require('../assets/imgs/rectangle/pix.png')}>
                             <ButtonText>PIX</ButtonText>
                         </BackGroundPix>
                     </ButtonPIX>

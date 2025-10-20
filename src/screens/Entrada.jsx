@@ -35,29 +35,29 @@ export default function Entrada() {
 
     return (
         <EntradaContainer>
-            <BackGround source={require("../assets/imgs/BackgroundDefault.png")}>
+            <BackGround source={require("../assets/imgs/backgroundDefault.png")}>
                 <ButtonContainer>
                     <TouchableOpacity onPress={() => navigation.goBack()}>
-                        <ButtonBack source={require("../assets/imgs/Button-Back.png")} />
+                        <ButtonBack source={require("../assets/imgs/buttonBack.png")} />
                     </TouchableOpacity>
                 </ButtonContainer>
                 <TitlePage>Entrada</TitlePage>
                 <InputContainer>
-                    <BackGroundInput source={require("../assets/imgs/Rectangle/Input.png")}>
+                    <BackGroundInput source={require("../assets/imgs/rectangle/input.png")}>
                         <InputEntrada
                             placeholder="Placa"
                             value={placa}
                             onChangeText={setPlaca}
                         />
                     </BackGroundInput>
-                    <BackGroundInput source={require("../assets/imgs/Rectangle/Input.png")}>
+                    <BackGroundInput source={require("../assets/imgs/rectangle/input.png")}>
                         <InputEntrada
                             placeholder="Modelo"
                             value={modelo}
                             onChangeText={setModelo}
                         />
                     </BackGroundInput>
-                    <BackGroundInput source={require("../assets/imgs/Rectangle/Input.png")}>
+                    <BackGroundInput source={require("../assets/imgs/rectangle/input.png")}>
                         <InputEntrada
                             placeholder="Cor"
                             value={cor}
@@ -67,7 +67,7 @@ export default function Entrada() {
                 </InputContainer>
                 <EnviarContainer>
                     <ButtonEnviar onPress={registrarEntrada}>
-                        <BackGroundEnviar source={require("../assets/imgs/Rectangle/Enviar.png")}>
+                        <BackGroundEnviar source={require("../assets/imgs/rectangle/enviar.png")}>
                             <ButtonText>Enviar</ButtonText>
                         </BackGroundEnviar>
                     </ButtonEnviar>
