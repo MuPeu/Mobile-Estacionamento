@@ -1,5 +1,5 @@
 import { Image, TouchableOpacity } from "react-native"
-import { PixContainer, TitlePage, ButtonClose, ButtonContainer, QrContainer, BackGroundQr, QrImage, BackGround } from "./style/pix"
+import { PixContainer, TitlePage, ButtonClose, ButtonContainer, QrContainer, BackGroundQr, QrImage, BackGround } from "./styles/pix"
 import { useNavigation } from '@react-navigation/native';
 
 export default function PIX() {

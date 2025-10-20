@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { TouchableOpacity } from "react-native";
-import { SingUpContainer, TitlePage, InputContainer, BackGroundInput, InputLogin, CriarContaContainer, ButtonText, BackGroundCadastar, ButtonCadastrar, CloseContainer, ButtonClose,  BackGround  } from "./style/singUp"
+import { SingUpContainer, TitlePage, InputContainer, BackGroundInput, InputLogin, CriarContaContainer, ButtonText, BackGroundCadastar, ButtonCadastrar, CloseContainer, ButtonClose,  BackGround  } from "./styles/singUp"
 import { useNavigation } from '@react-navigation/native';
 import api from "../services/api";
 

@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { PagamentoContainer, ButtonContainer, ButtonBack, TitlePage, ButtonsPagamentoContainer, BackGroundDebito, BackGroundCredito, BackGroundPix, ButtonText, ButtonDebito, ButtonCredito, ButtonPIX, BackGround } from "./style/pagamento"
+import { PagamentoContainer, ButtonContainer, ButtonBack, TitlePage, ButtonsPagamentoContainer, BackGroundDebito, BackGroundCredito, BackGroundPix, ButtonText, ButtonDebito, ButtonCredito, ButtonPIX, BackGround } from "./styles/pagamento"
 import * as Font from "expo-font"
 import { useNavigation } from '@react-navigation/native';
 import { TouchableOpacity } from "react-native";

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { TouchableOpacity, ActivityIndicator, Alert } from "react-native"
-import { HistoricoContainer, TitlePage, TextNumVagas, ButtonsHistorico, ButtonText, BackGroundPlaca, ButtonRegistro, ButtonContainer, ButtonBack, BackGround } from "./style/historico"
+import { HistoricoContainer, TitlePage, TextNumVagas, ButtonsHistorico, ButtonText, BackGroundPlaca, ButtonRegistro, ButtonContainer, ButtonBack, BackGround } from "./styles/historico"
 import { useNavigation } from '@react-navigation/native';
 import api from "../services/api";
 

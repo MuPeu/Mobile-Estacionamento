@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { TouchableOpacity, Alert } from "react-native";
-import { EntradaContainer, ButtonContainer, ButtonBack, TitlePage, BackGroundInput, InputContainer, InputEntrada, EnviarContainer, BackGroundEnviar, ButtonEnviar, ButtonText, BackGround } from "./style/entrada"
+import { EntradaContainer, ButtonContainer, ButtonBack, TitlePage, BackGroundInput, InputContainer, InputEntrada, EnviarContainer, BackGroundEnviar, ButtonEnviar, ButtonText, BackGround } from "./styles/entrada"
 import { useNavigation } from '@react-navigation/native';
 import api from "../services/api";
 

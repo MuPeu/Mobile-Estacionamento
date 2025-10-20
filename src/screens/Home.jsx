@@ -1,5 +1,5 @@
 import { TouchableOpacity } from "react-native";
-import { HomeContainer, TitlePage, BackGroundHistorico, ButtonHistorico, ButtonsContainer, ButtonText, BackGroundEntrada, ButtonEntrada, BackGroundSaida, ButtonSaida, CloseContainer, ButtonClose, BackGround} from "./style/home"
+import { HomeContainer, TitlePage, BackGroundHistorico, ButtonHistorico, ButtonsContainer, ButtonText, BackGroundEntrada, ButtonEntrada, BackGroundSaida, ButtonSaida, CloseContainer, ButtonClose, BackGround} from "./styles/home"
 import { useNavigation } from '@react-navigation/native';
 
 export default function Home() {

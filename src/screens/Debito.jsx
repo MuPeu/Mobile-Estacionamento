@@ -1,5 +1,5 @@
 import { TouchableOpacity } from "react-native";
-import { DebitoContainer, TitlePage, InputContainer, BackGroundInput, InputDebito, PagarContainer, ButtonText, BackGroundPagar, ButtonPagar, ButtonContainer, ButtonClose, BackGround  } from "./style/debito"
+import { DebitoContainer, TitlePage, InputContainer, BackGroundInput, InputDebito, PagarContainer, ButtonText, BackGroundPagar, ButtonPagar, ButtonContainer, ButtonClose, BackGround  } from "./styles/debito"
 import { useNavigation } from '@react-navigation/native';
 
 export default function Debito() {

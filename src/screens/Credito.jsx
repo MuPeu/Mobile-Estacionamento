@@ -1,5 +1,5 @@
 import { TouchableOpacity } from "react-native";
-import { CreditoContainer, TitlePage, InputContainer, BackGroundInput, InputCredito, PagarContainer, ButtonText, BackGroundPagar, ButtonPagar, ButtonContainer, ButtonClose, BackGround  } from "./style/credito"
+import { CreditoContainer, TitlePage, InputContainer, BackGroundInput, InputCredito, PagarContainer, ButtonText, BackGroundPagar, ButtonPagar, ButtonContainer, ButtonClose, BackGround  } from "./styles/credito"
 import { useNavigation } from '@react-navigation/native';
 
 export default function Credito() {

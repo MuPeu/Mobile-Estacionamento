@@ -1,5 +1,5 @@
 import { TouchableOpacity, Alert } from "react-native";
-import { SaidaContainer, ButtonContainer, ButtonBack, TitlePage, InputContainer, InputSaida, BackGroundInput, PagarContainer, ButtonPagar, ButtonText, BackGroundPagar, BackGround } from "./style/saida"
+import { SaidaContainer, ButtonContainer, ButtonBack, TitlePage, InputContainer, InputSaida, BackGroundInput, PagarContainer, ButtonPagar, ButtonText, BackGroundPagar, BackGround } from "./styles/saida"
 import { useNavigation, useRoute} from '@react-navigation/native';
 import api from "../services/api";
 

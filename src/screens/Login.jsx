@@ -1,4 +1,4 @@
-import { LoginContainer, TitlePage, ButtonsContainer, BackGroundEntrar, ButtonEntrar, BackGroundCadastro, ButtonCadastro, ButtonText, BackGround } from "./style/login"
+import { LoginContainer, TitlePage, ButtonsContainer, BackGroundEntrar, ButtonEntrar, BackGroundCadastro, ButtonCadastro, ButtonText, BackGround } from "./styles/login"
 import { useNavigation } from "@react-navigation/native";
 
 export default function Login() {
