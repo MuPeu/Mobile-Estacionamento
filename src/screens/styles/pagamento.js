@@ -2,16 +2,16 @@ import styled from "styled-components/native"
 import * as Font from "expo-font"
 
 export const PagamentoContainer = styled.View`
-    padding-top: 35px;
-    flex: 1;
-    align-items: center;
-    background-color: #6C6965;
-    gap: 100px;
+  padding-top: 35px;
+  flex: 1;
+  align-items: center;
+  background-color: #6C6965;
+  gap: 100px;
 `
 
 export const BackGround = styled.ImageBackground`
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 `
 
 export const TitlePage = styled.Text`
@@ -19,6 +19,14 @@ export const TitlePage = styled.Text`
   font-family: 'ALoveOfThunder';
   font-size: 60px;
   color: white;
+`
+
+export const ValorTotalText = styled.Text`
+  text-align: center;
+  font-family: 'ALoveOfThunder';
+  font-size: 35px;
+  color: #FFD700;
+  margin-top: 10px;
 `
 
 export const ButtonsPagamentoContainer = styled.View`
@@ -80,10 +88,10 @@ export const BackGroundPix = styled.ImageBackground`
 `
 
 export const ButtonContainer = styled.View`
-    padding-left: 25px;
+  padding-left: 25px;
 `
 
 export const ButtonBack = styled.Image`
-    width: 40px;
-    height: 30px;
+  width: 40px;
+  height: 30px;
 `

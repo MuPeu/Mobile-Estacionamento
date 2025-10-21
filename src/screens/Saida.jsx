@@ -10,9 +10,13 @@ export default function Saida() {
 
     async function registrarSaida() {
         try {
-            await api.put(`/saida/${placa}`);
-            Alert.alert("Sucesso", `Saída do veículo ${placa} registrada.`);
-            navigation.navigate("Historico");
+            const response = await api.put(`/saida/${placa}`);
+            const carro = response.data;
+            Alert.alert(
+                "Saída registrada",
+                `Veículo ${placa} - Valor total: R$ ${carro.valor_total.toFixed(2)}`
+            );
+            navigation.navigate("Pagamento", { valor_total: carro.valor_total });
         } catch (error) {
             console.error(error);
             Alert.alert("Erro", "Falha ao registrar saída.");

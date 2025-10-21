@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { PagamentoContainer, ButtonContainer, ButtonBack, TitlePage, ButtonsPagamentoContainer, BackGroundDebito, BackGroundCredito, BackGroundPix, ButtonText, ButtonDebito, ButtonCredito, ButtonPIX, BackGround } from "./styles/pagamento"
+import { PagamentoContainer, ButtonContainer, ButtonBack, TitlePage, ValorTotalText, ButtonsPagamentoContainer, BackGroundDebito, BackGroundCredito, BackGroundPix, ButtonText, ButtonDebito, ButtonCredito, ButtonPIX, BackGround } from "./styles/pagamento"
 import * as Font from "expo-font"
 import { useNavigation } from '@react-navigation/native';
 import { TouchableOpacity } from "react-native";
@@ -16,6 +16,9 @@ export default function Pagamento() {
                     </TouchableOpacity>
                 </ButtonContainer>
                 <TitlePage>Pagamento</TitlePage>
+                <ValorTotalText>
+                    Total a pagar: R$ {valor_total.toFixed(2)}
+                </ValorTotalText>
                 <ButtonsPagamentoContainer>
                     <ButtonDebito onPress={() => navigation.navigate('Debito')}>
                         <BackGroundDebito source={require('../assets/imgs/rectangle/debito.png')}>

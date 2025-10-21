@@ -10,8 +10,11 @@ import Debito from './src/screens/Debito';
 import Credito from './src/screens/Credito';
 import PIX from './src/screens/PIX';
 // import Cep from './src/screens/CEP';
+
+import React, { useEffect, useState } from 'react';
+import * as Font from 'expo-font';
 import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, Text, View } from 'react-native';
+import { ActivityIndicator, SafeAreaView } from 'react-native';
 import { createStaticNavigation } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -32,17 +35,38 @@ const RootStack = createNativeStackNavigator({
     Debito: Debito,
     Credito: Credito,
     PIX: PIX,
-    // Cep : Cep
+    // Cep: Cep
   }
 });
 
-const Navigation = createStaticNavigation(RootStack)
+const Navigation = createStaticNavigation(RootStack);
 
 export default function App() {
+  const [fontsLoaded, setFontsLoaded] = useState(false);
+
+  useEffect(() => {
+    async function loadFonts() {
+      await Font.loadAsync({
+        'ALoveOfThunder': require('./src/assets/fonts/ALoveOfThunder.ttf'),
+      });
+      setFontsLoaded(true);
+    }
+
+    loadFonts();
+  }, []);
+
+  if (!fontsLoaded) {
+    return (
+      <SafeAreaView style={{ flex: 1, backgroundColor: '#6C6965', justifyContent: 'center', alignItems: 'center' }}>
+        <ActivityIndicator size="large" color="#fff" />
+      </SafeAreaView>
+    );
+  }
+
   return (
     <SafeAreaView style={{flex: 1}}>
       <StatusBar hidden />
       <Navigation />
     </SafeAreaView>
   );
-};
+}
