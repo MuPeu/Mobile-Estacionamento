@@ -9,10 +9,10 @@ export default function Pagamento() {
 
     return (
         <PagamentoContainer>
-            <BackGround source={require('../assets/imgs/backgroundDefault.png')}>
+            <BackGround source={require('./assets/imgs/backgroundDefault.png')}>
                 <ButtonContainer>
                     <TouchableOpacity onPress={() => navigation.goBack()}>
-                        <ButtonBack source={require('../assets/imgs/buttonBack.png')}/>
+                        <ButtonBack source={require('./assets/imgs/buttonBack.png')}/>
                     </TouchableOpacity>
                 </ButtonContainer>
                 <TitlePage>Pagamento</TitlePage>
@@ -21,17 +21,17 @@ export default function Pagamento() {
                 </ValorTotalText>
                 <ButtonsPagamentoContainer>
                     <ButtonDebito onPress={() => navigation.navigate('Debito')}>
-                        <BackGroundDebito source={require('../assets/imgs/rectangle/debito.png')}>
+                        <BackGroundDebito source={require('./assets/imgs/rectangle/debito.png')}>
                             <ButtonText>Débito</ButtonText>
                         </BackGroundDebito>
                     </ButtonDebito>
                     <ButtonCredito onPress={() => navigation.navigate('Credito')}>
-                        <BackGroundCredito source={require('../assets/imgs/rectangle/credito.png')}>
+                        <BackGroundCredito source={require('./assets/imgs/rectangle/credito.png')}>
                             <ButtonText>Crédito</ButtonText>
                         </BackGroundCredito>
                     </ButtonCredito>
                     <ButtonPIX onPress={() => navigation.navigate('PIX')}>
-                        <BackGroundPix source={require('../assets/imgs/rectangle/pix.png')}>
+                        <BackGroundPix source={require('./assets/imgs/rectangle/pix.png')}>
                             <ButtonText>PIX</ButtonText>
                         </BackGroundPix>
                     </ButtonPIX>

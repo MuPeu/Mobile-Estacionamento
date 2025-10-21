@@ -47,7 +47,7 @@ export default function App() {
   useEffect(() => {
     async function loadFonts() {
       await Font.loadAsync({
-        'ALoveOfThunder': require('./src/assets/fonts/ALoveOfThunder.ttf'),
+        'ALoveOfThunder': require('./src/assets/fonts/a-love-of-thunder.ttf'),
       });
       setFontsLoaded(true);
     }

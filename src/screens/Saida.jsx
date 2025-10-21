@@ -25,21 +25,21 @@ export default function Saida() {
 
     return (
         <SaidaContainer>
-            <BackGround source={require("../assets/imgs/backgroundDefault.png")}>
+            <BackGround source={require("./assets/imgs/backgroundDefault.png")}>
                 <ButtonContainer>
                     <TouchableOpacity onPress={() => navigation.goBack()}>
-                        <ButtonBack source={require("../assets/imgs/buttonBack.png")} />
+                        <ButtonBack source={require("./assets/imgs/buttonBack.png")} />
                     </TouchableOpacity>
                 </ButtonContainer>
                 <TitlePage>Saída</TitlePage>
                 <InputContainer>
-                    <BackGroundInput source={require("../assets/imgs/rectangle/input.png")}>
+                    <BackGroundInput source={require("./assets/imgs/rectangle/input.png")}>
                         <InputSaida value={placa} editable={false} />
                     </BackGroundInput>
                 </InputContainer>
                 <PagarContainer>
                     <ButtonPagar onPress={registrarSaida}>
-                        <BackGroundPagar source={require("../assets/imgs/rectangle/pagar.png")}>
+                        <BackGroundPagar source={require("./assets/imgs/rectangle/pagar.png")}>
                             <ButtonText>Pagar</ButtonText>
                         </BackGroundPagar>
                     </ButtonPagar>
