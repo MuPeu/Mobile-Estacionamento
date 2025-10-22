@@ -7,7 +7,7 @@ export default function PIX() {
     
     return (
         <PixContainer>
-            <BackGround source={require('./assets/imgs/backgroundDefault.png')}>
+            <BackGround source={require('../assets/imgs/backgroundDefault.png')}>
                 <ButtonContainer>
                     <TouchableOpacity onPress={() => navigation.goBack()}>
                         <ButtonClose source={require('../assets/imgs/buttonClose.png')}/>

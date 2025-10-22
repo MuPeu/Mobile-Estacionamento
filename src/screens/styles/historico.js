@@ -73,7 +73,7 @@ export default function Placa() {
 
     return (
       <ButtonRegistro onPress={() => navigation.navigate('Saida')}>
-        <BackGroundPlaca source={require('../assets/imgs/Rectangle/Placa.png')}>
+        <BackGroundPlaca source={require('../../assets/imgs/rectangle/placa.png')}>
           <ButtonText>{data.placa}</ButtonText>
         </BackGroundPlaca>
       </ButtonRegistro>

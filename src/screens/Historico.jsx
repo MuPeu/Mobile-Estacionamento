@@ -31,7 +31,7 @@ export default function Historico() {
             <BackGround source={require("../assets/imgs/backgroundDefault.png")}>
                 <ButtonContainer>
                     <TouchableOpacity onPress={() => navigation.goBack()}>
-                        <ButtonBack source={require("./assets/imgs/buttonBack.png")} />
+                        <ButtonBack source={require("../assets/imgs/buttonBack.png")} />
                     </TouchableOpacity>
                 </ButtonContainer>
                 <TitlePage>Histórico</TitlePage>

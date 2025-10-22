@@ -7,7 +7,6 @@ export const PixContainer = styled.View`
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-image: url('./src/assets/BackgroundDefault.png'); */
     background-color: #6C6965;
     gap: 15px;
 `

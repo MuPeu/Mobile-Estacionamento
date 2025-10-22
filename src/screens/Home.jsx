@@ -7,7 +7,7 @@ export default function Home() {
 
     return (
         <HomeContainer>
-            <BackGround source={require('./assets/imgs/backgroundDefault.png')}>
+            <BackGround source={require('../assets/imgs/backgroundDefault.png')}>
                 <CloseContainer>
                     <TouchableOpacity onPress={() => navigation.navigate('Login')}>
                         <ButtonClose source={require('../assets/imgs/buttonClose.png')}/>
