@@ -7,7 +7,7 @@ export default function Credito() {
 
     return (
         <CreditoContainer>
-            <BackGround source={require('./assets/imgs/backgroundDefault.png')}>
+            <BackGround source={require('../assets/imgs/backgroundDefault.png')}>
                 <ButtonContainer>
                     <TouchableOpacity onPress={() => navigation.goBack()}>
                         <ButtonClose source={require('../assets/imgs/buttonClose.png')}/>
@@ -15,22 +15,22 @@ export default function Credito() {
                 </ButtonContainer>
                 <TitlePage>Crédito</TitlePage>
                 <InputContainer>
-                    <BackGroundInput source={require('./assets/imgs/rectangle/input.png')}>
+                    <BackGroundInput source={require('../assets/imgs/rectangle/input.png')}>
                         <InputCredito placeholder="Número do Cartão"/>
                     </BackGroundInput>
-                    <BackGroundInput source={require('./assets/imgs/rectangle/input.png')}>
+                    <BackGroundInput source={require('../assets/imgs/rectangle/input.png')}>
                         <InputCredito placeholder="Títular do Cartão"/>
                     </BackGroundInput>
                     <BackGroundInput source={require('../assets/imgs/rectangle/input.png')}>
                         <InputCredito placeholder="Validade: Mês e Ano"/>
                     </BackGroundInput>
-                    <BackGroundInput source={require('./assets/imgs/rectangle/input.png')}>
+                    <BackGroundInput source={require('../assets/imgs/rectangle/input.png')}>
                         <InputCredito placeholder="Código de Segurança"/>
                     </BackGroundInput>
                 </InputContainer>
                 <PagarContainer>
                     <ButtonPagar onPress={() => navigation.navigate('Home')}>
-                        <BackGroundPagar source={require('./assets/imgs/rectangle/pagar.png')}>
+                        <BackGroundPagar source={require('../assets/imgs/rectangle/pagar.png')}>
                             <ButtonText>Pagar</ButtonText>
                         </BackGroundPagar>
                     </ButtonPagar>

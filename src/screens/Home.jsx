@@ -10,23 +10,23 @@ export default function Home() {
             <BackGround source={require('./assets/imgs/backgroundDefault.png')}>
                 <CloseContainer>
                     <TouchableOpacity onPress={() => navigation.navigate('Login')}>
-                        <ButtonClose source={require('./assets/imgs/buttonClose.png')}/>
+                        <ButtonClose source={require('../assets/imgs/buttonClose.png')}/>
                     </TouchableOpacity>
                 </CloseContainer>
                 <TitlePage>Pytter Parking</TitlePage>
                 <ButtonsContainer>
                     <ButtonHistorico onPress={() => navigation.navigate('Historico')}>
-                        <BackGroundHistorico source={require('./assets/imgs/rectangle/historico.png')}>
+                        <BackGroundHistorico source={require('../assets/imgs/rectangle/historico.png')}>
                             <ButtonText>Historico</ButtonText>
                         </BackGroundHistorico>
                     </ButtonHistorico>
                     <ButtonEntrada onPress={() => navigation.navigate('Entrada')}>
-                        <BackGroundEntrada source={require('./assets/imgs/rectangle/entrada.png')}>
+                        <BackGroundEntrada source={require('../assets/imgs/rectangle/entrada.png')}>
                             <ButtonText>Entrada</ButtonText>
                         </BackGroundEntrada>
                     </ButtonEntrada>
                     <ButtonSaida onPress={() => navigation.navigate('Saida')}>
-                        <BackGroundSaida source={require('./assets/imgs/rectangle/saida.png')}>
+                        <BackGroundSaida source={require('../assets/imgs/rectangle/saida.png')}>
                             <ButtonText>Saida</ButtonText>
                         </BackGroundSaida>
                     </ButtonSaida>

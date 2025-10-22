@@ -24,22 +24,22 @@ export default function SingIn() {
 
     return (
         <SingInContainer>
-            <BackGround source={require('./assets/imgs/backgroundDefault.png')}>
+            <BackGround source={require('../assets/imgs/backgroundDefault.png')}>
                 <CloseContainer>
                     <TouchableOpacity onPress={() => navigation.navigate('Login')}>
-                        <ButtonClose source={require('./assets/imgs/buttonClose.png')} />
+                        <ButtonClose source={require('../assets/imgs/buttonClose.png')} />
                     </TouchableOpacity>
                 </CloseContainer>
                 <TitlePage>Login</TitlePage>
                 <InputContainer>
-                    <BackGroundInput source={require('./assets/imgs/rectangle/input.png')}>
+                    <BackGroundInput source={require('../assets/imgs/rectangle/input.png')}>
                         <InputLogin
                             placeholder="Usuário"
                             value={usuario}
                             onChangeText={setUsuario}
                         />
                     </BackGroundInput>
-                    <BackGroundInput source={require('./assets/imgs/rectangle/input.png')}>
+                    <BackGroundInput source={require('../assets/imgs/rectangle/input.png')}>
                         <InputLogin
                             placeholder="Senha"
                             secureTextEntry={true}
@@ -50,7 +50,7 @@ export default function SingIn() {
                 </InputContainer>
                 <LoginContainer>
                     <ButtonLogin onPress={handleLogin}>
-                        <BackGroundLogin source={require('./assets/imgs/rectangle/entrar.png')}>
+                        <BackGroundLogin source={require('../assets/imgs/rectangle/entrar.png')}>
                             <ButtonText>Login</ButtonText>
                         </BackGroundLogin>
                     </ButtonLogin>
