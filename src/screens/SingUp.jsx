@@ -4,7 +4,7 @@ import { SingUpContainer, TitlePage, InputContainer, BackGroundInput, InputLogin
 import { useNavigation } from '@react-navigation/native';
 import api from "../services/api";
 
-export default function SingIn() {
+export default function SingUp() {
     const navigation = useNavigation();
     const [usuario, setUsuario] = useState("");
     const [senha, setSenha] = useState("");
