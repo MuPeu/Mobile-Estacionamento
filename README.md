@@ -91,21 +91,57 @@
       ┣ 📂 fonts/
         ┣ 🆎 a-love-of-thunder.ttf
       ┣ 📂 imgs/
+        ┣ 📂 rectangle/
+            ┣ 🖼️ cadastrar-se.png
+            ┣ 🖼️ credito.png
+            ┣ 🖼️ criarConta.png
+            ┣ 🖼️ debito.png
+            ┣ 🖼️ entrada.png
+            ┣ 🖼️ entrar.png
+            ┣ 🖼️ enviar.png
+            ┣ 🖼️ historico.png
+            ┣ 🖼️ input.png
+            ┣ 🖼️ pagar.png
+            ┣ 🖼️ pix.png
+            ┣ 🖼️ placa.png
+            ┣ 🖼️ saida.png
         ┣ 🖼️ backgroundDefault.png
         ┣ 🖼️ buttonBack.png
         ┣ 🖼️ buttonClose.png
         ┣ 🖼️ logo_PytterParking.png
         ┣ 🖼️ qrCode.png
     ┣ 📂 screens/
-      ┣ 📂 styles/
+        ┣ 📂 styles/
+            ┣ 📄 credito.js
+            ┣ 📄 debito.js
+            ┣ 📄 entrada.js
+            ┣ 📄 historico.js
+            ┣ 📄 home.js
+            ┣ 📄 login.js
+            ┣ 📄 pagamento.js
+            ┣ 📄 pix.js
+            ┣ 📄 saida.js
+            ┣ 📄 singIn.js
+            ┣ 📄 singUp.js
+        ┣ ⚛️ Credito.jsx
+        ┣ ⚛️ Debito.jsx
+        ┣ ⚛️ Entrada.jsx
+        ┣ ⚛️ Historico.jsx
+        ┣ ⚛️ Home.jsx
+        ┣ ⚛️ Login.jsx
+        ┣ ⚛️ Pagamento.jsx
+        ┣ ⚛️ PIX.jsx
+        ┣ ⚛️ Saida.jsx
+        ┣ ⚛️ SingIn.jsx
+        ┣ ⚛️ SingUp.jsx
     ┣ 📂 services/
       ┣ 📄 api.js
   ┣ 📄 .gitignore
   ┣ 📄 app.json
-  ┣ 📄 App.jsx
+  ┣ ⚛️ App.jsx
   ┣ 📄 eas.json
   ┣ 📄 index.js
   ┣ 📄 package-lock.json
   ┣ 📄 package.json
-  ┗ 📄 README.md
+  ┗ ℹ️ README.md
 </pre>
