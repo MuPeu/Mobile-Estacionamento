@@ -17,14 +17,17 @@ export default function SingUp() {
         }
 
         try {
-            await api.post("/api/usuarios/cadastro", {
+            const response = await api.post("/api/usuarios/cadastro", {
                 usuario,
-                senha
+                senha,
+                confirmaSenha
             });
+            console.log("Resposta da API:", response.data);
             alert("Usuário criado com sucesso!");
             navigation.navigate('SingIn');
         } catch (err) {
-            alert("Erro ao criar usuário");
+            console.log("Erro ao criar usuário:", err.response?.data || err.message);
+            alert("Erro ao criar usuário: " + (err.response?.data || err.message));
         }
     }
 

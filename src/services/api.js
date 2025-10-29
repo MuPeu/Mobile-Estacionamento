@@ -2,7 +2,7 @@ import axios from "axios";
 
 const api = axios.create({
     baseURL:"https://pytterparking.azurewebsites.net", 
-    timeout: 5000,
+    timeout: 50000,
     headers:{
         'Content-Type':'application/json'
     }
